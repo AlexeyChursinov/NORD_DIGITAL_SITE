@@ -22,9 +22,23 @@
 }
 
 @font-face {
+    font-family: 'Montserrat Alternates Bold';
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Mulish';
     src: url('../fonts/Mulish/Mulish-Regular.ttf');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish Bold';
+    src: url('../fonts/Mulish/Mulish-Bold.ttf');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -36,8 +50,9 @@ body {
     font-size: 20px;
 }
 
-
-/* --NAVBAR-- */
+.text-center {
+    text-align: center;
+}
 
 .logo {
     display: block;
@@ -45,6 +60,16 @@ body {
     height: 44px;
     background: url(../img/logo.svg) no-repeat center left;
 }
+
+.logo-2 {
+    display: block;
+    width: 306px;
+    height: 60px;
+    background: url(../img/logo-2.svg) no-repeat center left;
+}
+
+
+/* --NAVBAR-- */
 
 .nav {
     display: flex;
@@ -68,6 +93,14 @@ body {
 .nav-link:hover,
 .nav-link:focus {
     color: #56CCF2;
+}
+
+.navbar-footer .navbar-nav {
+    padding-left: 0;
+}
+
+.navbar-footer .nav-link {
+    color: #FFFFFF;
 }
 
 .navbar {
@@ -142,6 +175,10 @@ body {
         padding-left: 1.53rem;
         padding-top: 0.54rem;
     }
+    .navbar-footer .nav-link {
+        padding-left: 0!important;
+        padding-right: 1.5rem!important;
+    }
     .navbar-expand-lg .navbar-nav-scroll {
         overflow: visible;
     }
@@ -152,7 +189,7 @@ body {
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
-    /* ======== */
+    /* --banner-- */
     .banner {
         margin-top: 73px!important;
     }
@@ -165,8 +202,31 @@ body {
         font-family: "Montserrat Alternates SemiBold";
         font-size: 56px;
         line-height: 125%;
+        margin: 0;
         padding-top: 200px;
         padding-bottom: 200px;
+    }
+    /* --statistic-- */
+    .statistic {
+        margin-top: 80px!important;
+    }
+    .stat-title {
+        font-family: "Mulish Bold";
+        font-size: 24px;
+        line-height: 170%;
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+    .stat-value {
+        font-family: 'Montserrat Alternates Bold';
+        font-size: 40px;
+        line-height: 125%;
+        margin-top: 0;
+        margin-bottom: 80px;
+        background: radial-gradient(76.96% 76.96% at 0% 0%, #56CCF2 0%, #2F80ED 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     /* --FOOTER-- */
     .footer {
