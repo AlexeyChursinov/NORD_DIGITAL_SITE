@@ -30,6 +30,13 @@
 
 @font-face {
     font-family: 'Mulish';
+    src: url('../fonts/Mulish/Mulish-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
     src: url('../fonts/Mulish/Mulish-Regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -48,6 +55,13 @@ body {
     background: #F7F7F8;
     color: #0C131D;
     font-size: 20px;
+}
+
+h2 {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 125%;
 }
 
 .text-center {
@@ -189,6 +203,54 @@ body {
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
+    /* --BUTTONS-- */
+    .btn {
+        font-family: 'Mulish Bold';
+        font-size: 18px;
+        line-height: 180%;
+        display: inline-block;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 12px 16px 12px 24px;
+        border-radius: 8px;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .btn {
+            transition: none;
+        }
+    }
+    .btn:hover {
+        color: #212529;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #2F80ED;
+        border-color: #2F80ED;
+    }
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #56CCF2;
+        border-color: #56CCF2;
+    }
+    .i-up-right {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        margin-left: 15px;
+        -webkit-mask-image: url(../img/icons/up-right.svg);
+        mask-image: url(../img/icons/up-right.svg);
+        background-color: #FFFFFF;
+    }
     /* --banner-- */
     .banner {
         margin-top: 73px!important;
@@ -205,6 +267,17 @@ body {
         margin: 0;
         padding-top: 200px;
         padding-bottom: 200px;
+    }
+    .banner-text span {
+        color: #2F80ED;
+    }
+    .cube {
+        background-image: url(../img/cube.png);
+        width: 722px;
+        height: 722px;
+        position: absolute;
+        top: 113px;
+        left: 923px;
     }
     /* --statistic-- */
     .statistic {
@@ -227,6 +300,61 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+    }
+    .statistic .row {
+        justify-content: space-between;
+    }
+    @media (min-width: 992px) {
+        .w-stat {
+            width: 20%;
+        }
+    }
+    /* --ABOUT-- */
+    .about {
+        margin-top: 216px;
+    }
+    .about h2 {
+        margin-top: 0;
+    }
+    .about p {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 175%;
+    }
+    .about-content {
+        margin-top: 117px;
+    }
+    .about .btn {
+        margin-top: 26px;
+    }
+    /* --ACTIVITY-- */
+    .activity {
+        margin-top: 210px!important;
+    }
+    .activity h2 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin: 0;
+    }
+    .activity p {
+        font-family: 'Mulish';
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .i-dev {
+        display: inline-block;
+        background-image: url(../img/icons/dev.svg);
+        width: 48px;
+        height: 48px;
+    }
+    /* --PROJECTS-- */
+    .projects {
+        margin-top: 216px;
+    }
+    .tile-sm {
+        border-radius: 12px;
+        background-color: #FFFFFF;
     }
     /* --FOOTER-- */
     .footer {
