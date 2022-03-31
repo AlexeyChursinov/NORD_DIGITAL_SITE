@@ -334,7 +334,7 @@ h2 {
     }
     .activity h2 {
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 54px;
         margin: 0;
     }
     .activity p {
@@ -342,11 +342,28 @@ h2 {
         font-size: 20px;
         line-height: 150%;
     }
+    .activity-item {
+        display: flex;
+    }
+    .activity-icon {
+        width: 130px;
+        height: 70px;
+        margin-top: 10px;
+    }
     .i-dev {
-        display: inline-block;
         background-image: url(../img/icons/dev.svg);
-        width: 48px;
-        height: 48px;
+        background-repeat: no-repeat;
+        margin-right: 28px;
+    }
+    .i-gz {
+        background-image: url(../img/icons/gz.svg);
+        background-repeat: no-repeat;
+        margin-right: 20px;
+    }
+    .i-arrow {
+        background-image: url(../img/icons/arrow.svg);
+        background-repeat: no-repeat;
+        margin-right: 33px;
     }
     /* --PROJECTS-- */
     .projects {
