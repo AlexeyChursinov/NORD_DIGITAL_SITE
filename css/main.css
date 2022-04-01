@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: 'Mulish';
+    font-family: 'Mulish Light';
     src: url('../fonts/Mulish/Mulish-Light.ttf');
     font-weight: 300;
     font-style: normal;
@@ -80,6 +80,18 @@ h2 {
     width: 306px;
     height: 60px;
     background: url(../img/logo-2.svg) no-repeat center left;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
 }
 
 
@@ -241,6 +253,14 @@ h2 {
         background-color: #56CCF2;
         border-color: #56CCF2;
     }
+    .btn-light {
+        color: #2F80ED;
+        background: rgba(47, 128, 237, 0.05);
+    }
+    .btn-light:hover {
+        color: #2F80ED;
+        background: rgba(47, 128, 237, 0.05);
+    }
     .i-up-right {
         display: inline-block;
         width: 32px;
@@ -251,9 +271,13 @@ h2 {
         mask-image: url(../img/icons/up-right.svg);
         background-color: #FFFFFF;
     }
+    .i-up-right-blue {
+        background-color: #2F80ED;
+    }
     /* --banner-- */
     .banner {
         margin-top: 73px!important;
+        position: relative;
     }
     .tiles {
         width: 1547px;
@@ -276,8 +300,8 @@ h2 {
         width: 722px;
         height: 722px;
         position: absolute;
-        top: 113px;
-        left: 923px;
+        top: -85px;
+        left: -28px;
     }
     /* --statistic-- */
     .statistic {
@@ -317,13 +341,13 @@ h2 {
         margin-top: 0;
     }
     .about p {
-        font-family: 'Mulish';
-        font-style: normal;
+        font-family: 'Mulish Light';
         font-size: 20px;
         line-height: 175%;
     }
     .about-content {
         margin-top: 117px;
+        padding-right: 14px;
     }
     .about .btn {
         margin-top: 26px;
@@ -346,9 +370,12 @@ h2 {
         display: flex;
     }
     .activity-icon {
-        width: 130px;
+        width: 160px;
         height: 70px;
         margin-top: 10px;
+    }
+    .activity .row {
+        padding-bottom: 60px;
     }
     .i-dev {
         background-image: url(../img/icons/dev.svg);
@@ -365,13 +392,87 @@ h2 {
         background-repeat: no-repeat;
         margin-right: 33px;
     }
+    .i-doughnut {
+        background-image: url(../img/icons/doughnut.svg);
+        background-repeat: no-repeat;
+        width: 105px;
+        margin-right: 33px;
+    }
+    .i-quad {
+        background-image: url(../img/icons/quad.svg);
+        background-repeat: no-repeat;
+        width: 100px;
+        margin-right: 33px;
+    }
+    .i-bar {
+        background-image: url(../img/icons/bar.svg);
+        background-repeat: no-repeat;
+        width: 48px;
+        margin-right: 33px;
+    }
+    .i-map {
+        background-image: url(../img/icons/map.svg);
+        background-repeat: no-repeat;
+        width: 50px;
+        margin-right: 33px;
+    }
+    @media (min-width: 992px) {
+        .activity .col-lg-4 {
+            width: 35%;
+            margin-right: 52px;
+        }
+    }
     /* --PROJECTS-- */
     .projects {
         margin-top: 216px;
     }
+    .projects .row {
+        margin-top: 56px;
+    }
     .tile-sm {
+        margin-bottom: 32px;
+        padding: 17px;
         border-radius: 12px;
         background-color: #FFFFFF;
+    }
+    .projects-content {
+        padding: 20px 20px 20px 23px;
+    }
+    .projects-content-title {
+        font-family: 'Montserrat Alternates SemiBold';
+        font-size: 24px;
+        line-height: 125%;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+    .projects-content-text {
+        font-family: 'Mulish Light';
+        font-size: 20px;
+        line-height: 175%;
+        margin-top: 7px;
+        margin-bottom: 3px;
+    }
+    .projects-content.empty-p {
+        padding: 0px 20px 17px 23px;
+    }
+    /* --EMPLOYEES-- */
+    .employees {
+        margin-top: 216px;
+    }
+    .tiles-emps {
+        margin-top: 58px;
+        border-radius: 16px;
+        padding: 48px 64px 48px 48px;
+        height: 262px;
+        background-color: #FFFFFF;
+    }
+    /* --LICENSES-- */
+    .licenses {
+        margin-top: 216px;
+    }
+    /* --PARTNERS-- */
+    .partners {
+        margin-top: 216px;
     }
     /* --FOOTER-- */
     .footer {
