@@ -11,10 +11,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/liMarquee.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- JS -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.liMarquee.js"></script>
+    <script src="js/lottie.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
 
@@ -51,10 +55,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <p class="banner-text"><span>Развитие</span> информационных систем и ПО</p>
+                        <p class="banner-text">
+                            <span class="word">Разработка </span>
+                            <span class="word">Поддержка </span>
+                            <span class="word">Развитие </span> информационных систем и ПО</p>
                     </div>
                     <div class="col-lg-6 relative">
-                        <div class="cube"></div>
+                        <div class="cube" id="cube"></div>
                     </div>
                 </div>
             </div>
@@ -102,7 +109,7 @@
         </div>
     </section>
 
-    <section class="activity tiles m-auto">
+    <section class="activity tiles m-auto relative">
         <div class="container">
             <div class="col-lg-6">
                 <h2>Основные направления деятельности</h2>
@@ -112,35 +119,40 @@
                     <div class="activity-item">
                         <div class="activity-icon i-dev"></div>
                         <div>
-                            <p>Разработка инструментов работы с информационными моделями объектов капитального строительства (BIM/ТИМ)</p>
+                            <p class="activity-text">Разработка инструментов работы с информационными моделями объектов капитального строительства (BIM/ТИМ)</p>
                         </div>
                     </div>
                     <div class="activity-item mt-3">
                         <div class="activity-icon i-gz"></div>
-                        <p>Автоматизация процессов бюджетирования, мониторинга процедур госзаказа и выполнения работ</p>
+                        <p class="activity-text">Автоматизация процессов бюджетирования, мониторинга процедур госзаказа и выполнения работ</p>
                     </div>
                     <div class="activity-item mt-3">
                         <div class="activity-icon i-arrow"></div>
-                        <p>Автоматизация целевых ведомственных процессов в соответствии с актуальной нормативно-справочной и регламентной базами</p>
+                        <p class="activity-text">Автоматизация целевых ведомственных процессов в соответствии с актуальной нормативно-справочной и регламентной базами</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="activity-item">
                         <div class="activity-icon i-doughnut"></div>
-                        <p>Разработка информационно-аналитических инструментов управления процессами</p>
+                        <p class="activity-text">Разработка информационно-аналитических инструментов управления процессами</p>
                     </div>
                     <div class="activity-item mt-3">
                         <div class="activity-icon i-quad"></div>
-                        <p>Разработка, внедрение и поддержка государственных информационных систем</p>
+                        <p class="activity-text">Разработка, внедрение и поддержка государственных информационных систем</p>
                     </div>
                     <div class="activity-item mt-3">
                         <div class="activity-icon i-bar"></div>
-                        <p>Аудит информационных систем</p>
+                        <p class="activity-text">Аудит информационных систем</p>
                     </div>
                     <div class="activity-item mt-3">
                         <div class="activity-icon i-map"></div>
-                        <p>Разработка геоинформационных систем</p>
+                        <p class="activity-text">Разработка геоинформационных систем</p>
                     </div>
+                </div>
+                <div class="tech">
+                    <!-- <marquee direction="down" scrollamount="10"> -->
+                    <p class="tech-text">&nbsp;SQL C# JavaScript &nbsp;&nbsp;ASP.NET TypeScript</p>
+                    <!-- </marquee> -->
                 </div>
             </dib>
         </div>
@@ -166,7 +178,7 @@
                         </div>
                         <div class="projects-content">
                             <p class="projects-content-title">ГИС АБДД</p>
-                            <p class="projects-content-text">Отраслевая геоинформационная автоматизированная бажа дорожных данных</p>
+                            <p class="projects-content-text">Отраслевая геоинформационная автоматизированная база дорожных данных</p>
                         </div>
                     </div>
                 </div>
@@ -196,23 +208,103 @@
         <div class="container">
             <h2>Сотрудники</h2>
             <div class="tiles-emps">
-
+                <div class="emp"></div>
+                <div class="emp-text">
+                    <p class="emp-text-sm">Специалист технической поддержки</p>
+                    <p class="emp-text-name">Константин Константинопольский</p>
+                    <p class="emp-text-description">Компания «Норд Диджитал» работает в дорожной отрасли и осуществляет разработку информационно-аналитических систем для автоматизации дорожной деятельности, проектирование и разработку интеллектуальных транспортных систем (АСУ дорожного
+                        движения).
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="licenses">
         <div class="container">
-            <div class="col-lg-6">
-                <h2>Лицензии и сертификаты</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Лицензии и сертификаты</h2>
+                    <p class="licenses-text">Задача организации, в особенности же перспективное планирование однозначно фиксирует необходимость форм воздействия. Принимая во внимание показатели успешности.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tiles-docs"></div>
+                </div>
             </div>
-            <div class="col-lg-6"></div>
         </div>
     </section>
 
     <section class="partners">
+        <h2 class="text-center">Нам доверяют</h2>
+        <div class="str">&nbsp;
+            <ul class="partners-list">
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-1"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-2"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-3"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-4"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-5"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-6"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-7"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="str-2">&nbsp;
+            <ul class="partners-list">
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-7"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-8"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-9"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-10"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-1"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-2"></div>
+                </li>
+                <li class="partners-list-item">
+                    <div class="partners-img partners-list-item-3"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="career">
         <div class="container">
-            <h2 class="text-center">Нам доверяют</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="career-img"></div>
+                </div>
+                <div class="col-lg-4 career-description">
+                    <h2>Карьера</h2>
+                    <p class="career-text">
+                        Ознакомьтесь с открытыми вакансиями и оставляйте ваши отклики.
+                    </p>
+                    <p class="career-text">
+                        Мы внимательно рассмотрим каждое резюме и свяжемся с Вами.
+                    </p>
+                    <button type="button" class="btn btn-primary">Посмотреть вакансии<span class="i-up-right"></span></button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -220,7 +312,7 @@
 
     <footer class="footer">
         <div class="container">
-            <a class="navbar-brand logo-2" href="#"></a>
+            <a class="footer-logo logo-2" href="#"></a>
 
             <nav class="navbar navbar-expand-lg navbar-footer">
                 <ul class="navbar-nav">

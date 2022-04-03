@@ -29,6 +29,13 @@
 }
 
 @font-face {
+    font-family: 'Montserrat Alternates ExtraBold';
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Mulish Light';
     src: url('../fonts/Mulish/Mulish-Light.ttf');
     font-weight: 300;
@@ -58,7 +65,7 @@ body {
 }
 
 h2 {
-    font-family: 'Montserrat Alternates SemiBold';
+    font-family: 'Montserrat Alternates SemiBold', sans-serif;
     font-style: normal;
     font-size: 40px;
     line-height: 125%;
@@ -217,7 +224,7 @@ h2 {
     }
     /* --BUTTONS-- */
     .btn {
-        font-family: 'Mulish Bold';
+        font-family: 'Mulish Bold', sans-serif;
         font-size: 18px;
         line-height: 180%;
         display: inline-block;
@@ -254,6 +261,7 @@ h2 {
         border-color: #56CCF2;
     }
     .btn-light {
+        padding: 10px 16px 10px 24px;
         color: #2F80ED;
         background: rgba(47, 128, 237, 0.05);
     }
@@ -285,37 +293,61 @@ h2 {
         background: #FFFFFF;
     }
     .banner-text {
-        font-family: "Montserrat Alternates SemiBold";
+        font-family: "Montserrat Alternates SemiBold", sans-serif;
         font-size: 56px;
         line-height: 125%;
         margin: 0;
-        padding-top: 200px;
+        padding-top: 270px;
         padding-bottom: 200px;
     }
     .banner-text span {
         color: #2F80ED;
     }
     .cube {
-        background-image: url(../img/cube.png);
+        /* background-image: url(../img/cube.png); */
         width: 722px;
         height: 722px;
         position: absolute;
         top: -85px;
         left: -28px;
     }
+    /* for text animation */
+    .word {
+        position: absolute;
+        top: 200px;
+        opacity: 0;
+    }
+    .letter {
+        display: inline-block;
+        position: relative;
+        float: left;
+        transform: translateZ(25px);
+        transform-origin: 50% 50% 25px;
+    }
+    .letter.out {
+        transform: rotateX(90deg);
+        transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    .letter.behind {
+        transform: rotateX(-90deg);
+    }
+    .letter.in {
+        transform: rotateX(0deg);
+        transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
     /* --statistic-- */
     .statistic {
         margin-top: 80px!important;
     }
     .stat-title {
-        font-family: "Mulish Bold";
+        font-family: "Mulish Bold", sans-serif;
         font-size: 24px;
         line-height: 170%;
         margin-top: 80px;
         margin-bottom: 0;
     }
     .stat-value {
-        font-family: 'Montserrat Alternates Bold';
+        font-family: 'Montserrat Alternates Bold', sans-serif;
         font-size: 40px;
         line-height: 125%;
         margin-top: 0;
@@ -341,7 +373,7 @@ h2 {
         margin-top: 0;
     }
     .about p {
-        font-family: 'Mulish Light';
+        font-family: 'Mulish Light', sans-serif;
         font-size: 20px;
         line-height: 175%;
     }
@@ -361,8 +393,8 @@ h2 {
         padding-bottom: 54px;
         margin: 0;
     }
-    .activity p {
-        font-family: 'Mulish';
+    .activity-text {
+        font-family: 'Mulish', sans-serif;
         font-size: 20px;
         line-height: 150%;
     }
@@ -378,41 +410,34 @@ h2 {
         padding-bottom: 60px;
     }
     .i-dev {
-        background-image: url(../img/icons/dev.svg);
-        background-repeat: no-repeat;
+        background: url(../img/icons/dev.svg) no-repeat;
         margin-right: 28px;
     }
     .i-gz {
-        background-image: url(../img/icons/gz.svg);
-        background-repeat: no-repeat;
+        background: url(../img/icons/gz.svg) no-repeat;
         margin-right: 20px;
     }
     .i-arrow {
-        background-image: url(../img/icons/arrow.svg);
-        background-repeat: no-repeat;
+        background: url(../img/icons/arrow.svg) no-repeat;
         margin-right: 33px;
     }
     .i-doughnut {
-        background-image: url(../img/icons/doughnut.svg);
-        background-repeat: no-repeat;
+        background: url(../img/icons/doughnut.svg) no-repeat;
         width: 105px;
         margin-right: 33px;
     }
     .i-quad {
-        background-image: url(../img/icons/quad.svg);
-        background-repeat: no-repeat;
+        background: url(../img/icons/quad.svg) no-repeat;
         width: 100px;
         margin-right: 33px;
     }
     .i-bar {
-        background-image: url(../img/icons/bar.svg);
-        background-repeat: no-repeat;
+        background: url(../img/icons/bar.svg) no-repeat;
         width: 48px;
         margin-right: 33px;
     }
     .i-map {
-        background-image: url(../img/icons/map.svg);
-        background-repeat: no-repeat;
+        background: url(../img/icons/map.svg) no-repeat;
         width: 50px;
         margin-right: 33px;
     }
@@ -421,6 +446,22 @@ h2 {
             width: 35%;
             margin-right: 52px;
         }
+    }
+    .tech {
+        position: absolute;
+        top: 0;
+        right: 0;
+        writing-mode: vertical-rl;
+    }
+    .tech-text {
+        font-family: 'Montserrat Alternates ExtraBold', sans-serif;
+        font-size: 56px;
+        line-height: 125%;
+        letter-spacing: 0.05em;
+        word-spacing: 40px;
+        color: transparent;
+        -webkit-text-stroke: 1px #15499F;
+        /* transform: rotate(90deg); */
     }
     /* --PROJECTS-- */
     .projects {
@@ -439,14 +480,14 @@ h2 {
         padding: 20px 20px 20px 23px;
     }
     .projects-content-title {
-        font-family: 'Montserrat Alternates SemiBold';
+        font-family: 'Montserrat Alternates SemiBold', sans-serif;
         font-size: 24px;
         line-height: 125%;
         margin-top: 7px;
         margin-bottom: 0;
     }
     .projects-content-text {
-        font-family: 'Mulish Light';
+        font-family: 'Mulish Light', sans-serif;
         font-size: 20px;
         line-height: 175%;
         margin-top: 7px;
@@ -460,25 +501,156 @@ h2 {
         margin-top: 216px;
     }
     .tiles-emps {
-        margin-top: 58px;
+        position: relative;
+        width: 870px;
+        margin-top: 60px;
         border-radius: 16px;
-        padding: 48px 64px 48px 48px;
+        padding: 50px 64px 50px 48px;
         height: 262px;
         background-color: #FFFFFF;
+        margin-left: 116px;
+    }
+    .emp {
+        position: absolute;
+        top: 30px;
+        left: -116px;
+        background: url(../img/employee-1.png) no-repeat;
+        width: 262px;
+        height: 283px;
+    }
+    .emp-text {
+        margin-left: 158px;
+    }
+    .emp-text-sm {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Mulish Light', sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .emp-text-name {
+        font-family: 'Montserrat Alternates SemiBold', sans-serif;
+        font-size: 28px;
+        line-height: 125%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .emp-text-description {
+        font-family: 'Mulish Light', sans-serif;
+        font-size: 20px;
+        line-height: 175%;
     }
     /* --LICENSES-- */
     .licenses {
         margin-top: 216px;
     }
+    .licenses-text {
+        font-family: 'Mulish Light', sans-serif;
+        font-size: 20px;
+        line-height: 175%;
+    }
+    .tiles-docs {
+        margin-left: 175px;
+        width: 552px;
+        height: 355px;
+        background: #FFFFFF;
+        border-radius: 16px;
+    }
+    @media (min-width: 992px) {
+        .licenses .col-lg-4 {
+            width: 37%;
+            margin-top: 10px;
+        }
+    }
     /* --PARTNERS-- */
     .partners {
         margin-top: 216px;
+    }
+    .partners-list {
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+    }
+    .partners-list-item {
+        display: flex;
+        flex-grow: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 280px;
+        height: 133px;
+        padding: 48px 32px 48px 32px;
+        margin-right: 28px;
+        margin-top: 0;
+        background: #FFFFFF;
+        border-radius: 16px;
+    }
+    .partners-img {
+        width: 283px;
+        height: 213px;
+    }
+    .partners-list-item-1 {
+        background: url(../img/partner-1.png) center center no-repeat;
+    }
+    .partners-list-item-2 {
+        background: url(../img/partner-2.png) center center no-repeat;
+    }
+    .partners-list-item-3 {
+        background: url(../img/partner-3.png) center center no-repeat;
+    }
+    .partners-list-item-4 {
+        background: url(../img/partner-4.png) center center no-repeat;
+    }
+    .partners-list-item-5 {
+        background: url(../img/partner-5.png) center center no-repeat;
+    }
+    .partners-list-item-6 {
+        background: url(../img/partner-6.png) center center no-repeat;
+    }
+    .partners-list-item-7 {
+        background: url(../img/partner-7.png) center center no-repeat;
+    }
+    .partners-list-item-8 {
+        background: url(../img/partner-8.png) center center no-repeat;
+    }
+    .partners-list-item-9 {
+        background: url(../img/partner-9.png) center center no-repeat;
+    }
+    .partners-list-item-10 {
+        background: url(../img/partner-10.png) center center no-repeat;
+    }
+    /* --CAREER-- */
+    .career {
+        margin-top: 112px;
+    }
+    .career-img {
+        background: url(../img/career.png) center center no-repeat;
+        width: 752px;
+        height: 752px;
+    }
+    .career-description {
+        margin-left: 224px;
+        margin-top: 165px;
+    }
+    .career-text {
+        font-family: 'Mulish Light', sans-serif;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .career .btn {
+        margin-top: 50px;
     }
     /* --FOOTER-- */
     .footer {
         margin-top: 112px;
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 65px;
         background: #0C131D;
+    }
+    .footer-logo {
+        margin-top: 47px;
+    }
+    .navbar-footer {
+        margin-top: 70px;
     }
 }
