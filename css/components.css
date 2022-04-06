@@ -1,0 +1,69 @@
+  /* --BUTTONS-- */
+  
+  .btn {
+      font-family: 'Mulish Bold', sans-serif;
+      font-size: 18px;
+      line-height: 180%;
+      display: inline-block;
+      color: #212529;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: 12px 16px 12px 24px;
+      border-radius: 8px;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+      .btn {
+          transition: none;
+      }
+  }
+  
+  .btn:hover {
+      color: #212529;
+  }
+  
+  .btn-primary {
+      color: #fff;
+      background-color: #2F80ED;
+      border-color: #2F80ED;
+  }
+  
+  .btn-primary:hover {
+      color: #fff;
+      background-color: #56CCF2;
+      border-color: #56CCF2;
+  }
+  
+  .btn-light {
+      padding: 10px 16px 10px 24px;
+      color: #2F80ED;
+      background: rgba(47, 128, 237, 0.05);
+  }
+  
+  .btn-light:hover {
+      color: #2F80ED;
+      background: rgba(47, 128, 237, 0.05);
+  }
+  
+  .i-up-right {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      margin-left: 15px;
+      -webkit-mask-image: url(../img/icons/up-right.svg);
+      mask-image: url(../img/icons/up-right.svg);
+      background-color: #FFFFFF;
+  }
+  
+  .i-up-right-blue {
+      background-color: #2F80ED;
+  }
