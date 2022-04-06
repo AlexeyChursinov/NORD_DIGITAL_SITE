@@ -42,6 +42,12 @@
       border-color: #56CCF2;
   }
   
+  .btn-primary:active {
+      color: #fff;
+      background-color: #2B75D9;
+      border-color: #2B75D9;
+  }
+  
   .btn-light {
       padding: 10px 16px 10px 24px;
       color: #2F80ED;
