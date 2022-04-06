@@ -54,6 +54,12 @@
             max-width: 672px;
         }
     }
+    
+    @media (max-width: 767px) {
+        .container {
+            max-width: 408px;
+        }
+    }
     /* --NAVBAR-- */
     
     .nav {
@@ -93,7 +99,6 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        /* margin-top: 32px; */
         align-items: center;
         justify-content: space-between;
     }
@@ -382,9 +387,7 @@
             padding-bottom: 157px;
         }
         .word {
-            position: absolute;
             top: 157px;
-            opacity: 0;
         }
     }
     
@@ -410,9 +413,42 @@
             padding-bottom: 157px;
         }
         .word {
-            position: absolute;
             top: 108px;
-            opacity: 0;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .tiles {
+            max-width: 432px;
+        }
+        .banner .tiles {
+            height: 473px;
+        }
+        .cube {
+            width: 305px;
+            height: 305px;
+            top: -477px;
+            left: 63px;
+        }
+        .col-banner {
+            flex-basis: 100%;
+        }
+        .banner-text {
+            text-align: center;
+            padding-top: 345px;
+            padding-bottom: 20px;
+        }
+        .word {
+            top: 305px;
+            left: 280px;
+        }
+        .banner {
+            margin-top: 98px!important;
+        }
+        .logo {
+            width: 163px;
+            height: 32px;
+            background-size: contain;
         }
     }
     /* --statistic-- */
@@ -480,6 +516,12 @@
             padding-top: 80px;
         }
     }
+    
+    @media (max-width: 767px) {
+        .statistic {
+            margin-top: 24px!important;
+        }
+    }
     /* --ABOUT-- */
     
     .about {
@@ -540,6 +582,21 @@
     @media (max-width: 1023px) {
         .about .container {
             width: 670px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .about .container {
+            max-width: 408px;
+        }
+        .about {
+            margin-top: 96px;
+        }
+        .about h2 {
+            font-size: 32px;
+        }
+        .about p {
+            font-size: 18px;
         }
     }
     /* --ACTIVITY-- */
@@ -722,6 +779,13 @@
             margin-top: 65px;
         }
     }
+    
+    @media (max-width: 767px) {
+        .activity h2 {
+            font-size: 32px;
+            text-align: center;
+        }
+    }
     /* --PROJECTS-- */
     
     .projects {
@@ -805,6 +869,12 @@
         }
         .projects-bottom-fade {
             display: none;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .projects h2 {
+            font-size: 32px;
         }
     }
     /* --EMPLOYEES-- */
@@ -1126,5 +1196,89 @@
     }
     
     .navbar-footer {
-        margin-top: 70px;
+        margin-top: 0;
+    }
+    
+    .col-footer-1 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    
+    .col-footer-2 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+    
+    .footer-contacts {
+        color: #FFFFFF;
+        margin-top: 47px;
+    }
+    
+    .footer-contacts-phone {
+        font-family: 'Montserrat Alternates SemiBold';
+        font-size: 24px;
+        line-height: 125%;
+        margin: 0;
+    }
+    
+    .footer-contacts-email,
+    .footer-contacts-address {
+        font-family: 'Mulish Light';
+        font-size: 20px;
+        line-height: 150%;
+        margin: 0;
+    }
+    
+    .footer-contacts-email {
+        margin-top: 8px;
+    }
+    
+    .footer-contacts-address {
+        margin-top: 24px;
+    }
+    
+    .navbar-footer {
+        margin-top: -53px;
+    }
+    
+    @media (max-width: 1200px) {
+        .footer .row {
+            justify-content: center;
+        }
+        .col-footer-1 {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .col-footer-2 {
+            flex-basis: 30%;
+            text-align: center;
+        }
+        .navbar-footer {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-footer .navbar-nav {
+            flex-direction: row;
+        }
+        .navbar-footer .navbar-nav .nav-link {
+            padding-left: 0!important;
+            padding-right: 1.5rem!important;
+        }
+        .footer-logo {
+            margin-top: 28px;
+        }
+        .footer-contacts {
+            margin-top: 41px;
+        }
+    }
+    
+    @media (max-width: 1023px) {
+        .col-footer-2 {
+            flex-basis: 40%;
+        }
+        .navbar-footer {
+            padding: 0;
+        }
     }
