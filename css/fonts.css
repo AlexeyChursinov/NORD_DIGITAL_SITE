@@ -1,0 +1,57 @@
+ /* --FONTS-- */
+ 
+ @font-face {
+     font-family: 'Montserrat Alternates Light';
+     src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf');
+     font-weight: 300;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Montserrat Alternates';
+     src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Montserrat Alternates SemiBold';
+     src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
+     font-weight: 600;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Montserrat Alternates Bold';
+     src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
+     font-weight: 700;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Montserrat Alternates ExtraBold';
+     src: url('../fonts/Montserrat_Alternates/MontserratAlternates-ExtraBold.ttf');
+     font-weight: 800;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Mulish Light';
+     src: url('../fonts/Mulish/Mulish-Light.ttf');
+     font-weight: 300;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Mulish';
+     src: url('../fonts/Mulish/Mulish-Regular.ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Mulish Bold';
+     src: url('../fonts/Mulish/Mulish-Bold.ttf');
+     font-weight: 700;
+     font-style: normal;
+ }
