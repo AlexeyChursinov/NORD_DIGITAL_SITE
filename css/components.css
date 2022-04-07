@@ -73,3 +73,76 @@
   .i-up-right-blue {
       background-color: #2F80ED;
   }
+  /* --SWIPER-- */
+  
+  .swiper {
+      width: 100%;
+      height: 187px;
+      display: none;
+  }
+  
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      border-radius: 16px;
+      background: #fff;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+  }
+  
+  .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  .swiper-item {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .statistic .swiper-item {
+      margin-top: 48px;
+  }
+  
+  .swiper {
+      padding-bottom: 43px !important;
+  }
+  
+  .swiper-pagination-bullet {
+      width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 23%));
+      height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 4px));
+      border-radius: 0;
+  }
+  
+  .swiper-activity-container {
+      padding: 0;
+  }
+  
+  .swiper .activity-icon {
+      width: 100%;
+      margin: 0;
+  }
+  
+  .swiper .activity-text {
+      margin-top: 4px;
+      font-size: 18px;
+      line-height: 150%;
+  }
+  
+  .activity .swiper {
+      padding-bottom: 63px !important;
+  }
+  
+  @media (max-width: 767px) {
+      .swiper {
+          display: block;
+      }
+  }

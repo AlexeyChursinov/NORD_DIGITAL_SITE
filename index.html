@@ -10,317 +10,390 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/liMarquee.css">
+    <link rel="stylesheet" href="css/vendor/liMarquee.css">
+    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.liMarquee.js"></script>
-    <script src="js/lottie.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.liMarquee.js"></script>
+    <script src="js/vendor/lottie.js"></script>
+    <script src="js/vendor/bootstrap.bundle.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
 </head>
 
 <body>
     <!-- HEADER -->
-    <nav id="nav" class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand logo" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О компании</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Карьера</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="tiles m-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-banner">
+                            <p class="banner-text">
+                                <span class="word">Разработка </span>
+                                <span class="word">Поддержка </span>
+                                <span class="word">Развитие </span> информационных систем и ПО</p>
+                        </div>
+                        <div class="col-banner relative">
+                            <div class="cube" id="cube"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistic">
+            <div class="tiles m-auto text-center stat-main">
+                <div class="container">
+                    <div class="row stat-wrap">
+                        <div class="col-stat">
+                            <p class="stat-title">Работаем</p>
+                            <p class="stat-value">с 2018 г.</p>
+                        </div>
+                        <div class="col-stat">
+                            <p class="stat-title">Клиентов</p>
+                            <p class="stat-value">200+</p>
+                        </div>
+                        <div class="col-stat">
+                            <p class="stat-title">Проектов</p>
+                            <p class="stat-value">60+</p>
+                        </div>
+                        <div class="col-stat">
+                            <p class="stat-title">Стоимость проектов</p>
+                            <p class="stat-value">&#x3E;20 млн &#8381;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- swiper -->
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <p class="stat-title">Работаем</p>
+                                <p class="stat-value">с 2018 г.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <p class="stat-title">Клиентов</p>
+                                <p class="stat-value">200+</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <p class="stat-title">Проектов</p>
+                                <p class="stat-value">60+</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <p class="stat-title">Стоимость проектов</p>
+                                <p class="stat-value">&#x3E;20 млн &#8381;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-about">
+                        <img src="/img/about.png" alt="Nord Digital">
+                    </div>
+                    <div class="col-about about-content">
+                        <h2>О компании</h2>
+                        <p>Стратегическое направление деятельности ООО «Норд Диджитал» - создание программного обеспечения, разработка новых и развитие уже существующих информационных систем.</p>
+                        <p>Команда ООО «Норд Диджитал» обладает глубокими знаниями разных предметных областей и опытом успешных внедрений и предлагает заказчикам оптимальные решения, направленные на повышение эффективности управления бизнес-процессами.</p>
+                        <button type="button" class="btn btn-primary">Подробнее<span class="i-up-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity tiles m-auto relative">
+            <div class="container">
+                <div class="activity-title">
+                    <h2>Основные направления деятельности</h2>
+                </div>
+                <div class="row">
+                    <div class="activity-main">
+                        <div class="col-activity">
+                            <div class="activity-item">
+                                <div class="activity-icon i-dev"></div>
+                                <p class="activity-text">Разработка инструментов работы с информационными моделями объектов капитального строительства (BIM/ТИМ)</p>
+                            </div>
+                            <div class="activity-item mt-3">
+                                <div class="activity-icon i-gz"></div>
+                                <p class="activity-text">Автоматизация процессов бюджетирования, мониторинга процедур госзаказа и выполнения работ</p>
+                            </div>
+                            <div class="activity-item mt-3">
+                                <div class="activity-icon i-arrow"></div>
+                                <p class="activity-text">Автоматизация целевых ведомственных процессов в соответствии с актуальной нормативно-справочной и регламентной базами</p>
+                            </div>
+                        </div>
+                        <div class="col-activity mt-act-2">
+                            <div class="activity-item">
+                                <div class="activity-icon i-doughnut"></div>
+                                <p class="activity-text">Разработка информационно-аналитических инструментов управления процессами</p>
+                            </div>
+                            <div class="activity-item mt-3">
+                                <div class="activity-icon i-quad"></div>
+                                <p class="activity-text">Разработка, внедрение и поддержка государственных информационных систем</p>
+                            </div>
+                            <div class="activity-item mt-3">
+                                <div class="activity-icon i-bar"></div>
+                                <p class="activity-text">Аудит информационных систем</p>
+                            </div>
+                            <div class="activity-item mt-i-map">
+                                <div class="activity-icon i-map"></div>
+                                <p class="activity-text">Разработка геоинформационных систем</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container swiper-activity-container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="activity-icon i-dev"></div>
+                                        <p class="activity-text">Разработка инструментов работы с информационными моделями объектов капитального строительства (BIM/ТИМ)</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="activity-icon i-gz"></div>
+                                        <p class="activity-text">Автоматизация процессов бюджетирования, мониторинга процедур госзаказа и выполнения работ</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="activity-icon i-arrow"></div>
+                                        <p class="activity-text">Автоматизация целевых ведомственных процессов в соответствии с актуальной нормативно-справочной и регламентной базами</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="activity-icon i-doughnut"></div>
+                                        <p class="activity-text">Разработка информационно-аналитических инструментов управления процессами</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech">
+                        <!-- <marquee direction="down" scrollamount="10"> -->
+                        <p class="tech-text">&nbsp;SQL C# JavaScript &nbsp;&nbsp;ASP.NET TypeScript</p>
+                        <!-- </marquee> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="tech-bottom">
+            <!-- <marquee direction="down" scrollamount="10"> -->
+            <p class="tech-text">SQL C# JavaScript &nbsp;ASP.NET TypeScript</p>
+            <!-- </marquee> -->
+        </div>
+
+        <section class="projects">
+            <div class="container">
+                <h2>Реализованные проекты</h2>
+                <div class="row relative">
+                    <div class="col-lg-6">
+                        <div class="tile-sm">
+                            <div class="text-center">
+                                <img src="/img/risad.png" width="100%" alt="РиСАД">
+                            </div>
+                            <div class="projects-content">
+                                <p class="projects-content-title">РиСАД</p>
+                                <p class="projects-content-text">Модуль «Ремонт и содержание автомобильных дорог»</p>
+                            </div>
+                        </div>
+                        <div class="tile-sm">
+                            <div class="text-center">
+                                <img src="/img/abdd.png" width="100%" alt="ГИС АБДД">
+                            </div>
+                            <div class="projects-content">
+                                <p class="projects-content-title">ГИС АБДД</p>
+                                <p class="projects-content-text">Отраслевая геоинформационная автоматизированная база дорожных данных</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tile-sm">
+                            <div class="text-center">
+                                <img src="/img/project-3.png" width="100%" alt="">
+                            </div>
+                            <div class="projects-content">
+                                <p class="projects-content-title">Управление экономикой</p>
+                                <p class="projects-content-text pr-10">Стратегическое и долгосрочное планирование, Текущее и оперативное планирование и бюджетирование, Управление затратами и калькулирование себестоимости, Оптимизация затрат, Аналитическая отчётность</p>
+                            </div>
+                        </div>
+                        <div class="tile-sm last-project">
+                            <div class="text-center">
+                                <img src="/img/project-4.png" width="100%" alt="">
+                                <div class="projects-content empty-p"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-bottom-fade"></div>
+                </div>
+                <button type="button" class="btn btn-light w100">Посмотреть все проекты<span class="i-up-right i-up-right-blue"></span></button>
+            </div>
+        </section>
+
+        <section class="employees">
+            <div class="container">
+                <h2>Сотрудники</h2>
+                <div class="tiles-emps">
+                    <div class="emp"></div>
+                    <div class="emp-text">
+                        <p class="emp-text-sm">Специалист технической поддержки</p>
+                        <p class="emp-text-name">Константин Константинопольский</p>
+                        <p class="emp-text-description">Компания «Норд Диджитал» работает в дорожной отрасли и осуществляет разработку информационно-аналитических систем для автоматизации дорожной деятельности, проектирование и разработку интеллектуальных транспортных систем (АСУ дорожного
+                            движения).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="licenses">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>Лицензии и сертификаты</h2>
+                        <p class="licenses-text">Задача организации, в особенности же перспективное планирование однозначно фиксирует необходимость форм воздействия. Принимая во внимание показатели успешности.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tiles-docs"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <h2 class="text-center">Нам доверяют</h2>
+            <div class="str">&nbsp;
+                <ul class="partners-list">
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-1"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Проекты</a>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-2"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги</a>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-3"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Карьера</a>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-4"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Вакансии</a>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-5"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-6"></div>
+                    </li>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-7"></div>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+            <div class="str-2">&nbsp;
+                <ul class="partners-list">
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-7"></div>
+                    </li>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-8"></div>
+                    </li>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-9"></div>
+                    </li>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-10"></div>
+                    </li>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-1"></div>
+                    </li>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-2"></div>
+                    </li>
+                    <li class="partners-list-item">
+                        <div class="partners-img partners-list-item-3"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="banner">
-        <div class="tiles m-auto">
+        <section class="career">
             <div class="container">
                 <div class="row">
-                    <div class="col-banner">
-                        <p class="banner-text">
-                            <span class="word">Разработка </span>
-                            <span class="word">Поддержка </span>
-                            <span class="word">Развитие </span> информационных систем и ПО</p>
+                    <div class="col-career-img">
+                        <div class="career-img"></div>
                     </div>
-                    <div class="col-banner relative">
-                        <div class="cube" id="cube"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="statistic">
-        <div class="tiles m-auto text-center">
-            <div class="container">
-                <div class="row stat-wrap">
-                    <div class="col-stat">
-                        <p class="stat-title">Работаем</p>
-                        <p class="stat-value">с 2018 г.</p>
-                    </div>
-                    <div class="col-stat">
-                        <p class="stat-title">Клиентов</p>
-                        <p class="stat-value">200+</p>
-                    </div>
-                    <div class="col-stat">
-                        <p class="stat-title">Проектов</p>
-                        <p class="stat-value">60+</p>
-                    </div>
-                    <div class="col-stat">
-                        <p class="stat-title">Стоимость проектов</p>
-                        <p class="stat-value">&#x3E;20 млн &#8381;</p>
+                    <div class="col-career-text career-description">
+                        <h2>Карьера</h2>
+                        <p class="career-text">
+                            Ознакомьтесь с открытыми вакансиями и оставляйте ваши отклики.
+                        </p>
+                        <p class="career-text">
+                            Мы внимательно рассмотрим каждое резюме и свяжемся с Вами.
+                        </p>
+                        <button type="button" class="btn btn-primary">Посмотреть вакансии<span class="i-up-right"></span></button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-about">
-                    <img src="/img/about.png" alt="Nord Digital">
-                </div>
-                <div class="col-about about-content">
-                    <h2>О компании</h2>
-                    <p>Стратегическое направление деятельности ООО «Норд Диджитал» - создание программного обеспечения, разработка новых и развитие уже существующих информационных систем.</p>
-                    <p>Команда ООО «Норд Диджитал» обладает глубокими знаниями разных предметных областей и опытом успешных внедрений и предлагает заказчикам оптимальные решения, направленные на повышение эффективности управления бизнес-процессами.</p>
-                    <button type="button" class="btn btn-primary">Подробнее<span class="i-up-right"></span></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="activity tiles m-auto relative">
-        <div class="container">
-            <div class="activity-title">
-                <h2>Основные направления деятельности</h2>
-            </div>
-            <div class="row">
-                <div class="col-activity">
-                    <div class="activity-item">
-                        <div class="activity-icon i-dev"></div>
-                        <div>
-                            <p class="activity-text">Разработка инструментов работы с информационными моделями объектов капитального строительства (BIM/ТИМ)</p>
-                        </div>
-                    </div>
-                    <div class="activity-item mt-3">
-                        <div class="activity-icon i-gz"></div>
-                        <p class="activity-text">Автоматизация процессов бюджетирования, мониторинга процедур госзаказа и выполнения работ</p>
-                    </div>
-                    <div class="activity-item mt-3">
-                        <div class="activity-icon i-arrow"></div>
-                        <p class="activity-text">Автоматизация целевых ведомственных процессов в соответствии с актуальной нормативно-справочной и регламентной базами</p>
-                    </div>
-                </div>
-                <div class="col-activity mt-act-2">
-                    <div class="activity-item">
-                        <div class="activity-icon i-doughnut"></div>
-                        <p class="activity-text">Разработка информационно-аналитических инструментов управления процессами</p>
-                    </div>
-                    <div class="activity-item mt-3">
-                        <div class="activity-icon i-quad"></div>
-                        <p class="activity-text">Разработка, внедрение и поддержка государственных информационных систем</p>
-                    </div>
-                    <div class="activity-item mt-3">
-                        <div class="activity-icon i-bar"></div>
-                        <p class="activity-text">Аудит информационных систем</p>
-                    </div>
-                    <div class="activity-item mt-i-map">
-                        <div class="activity-icon i-map"></div>
-                        <p class="activity-text">Разработка геоинформационных систем</p>
-                    </div>
-                </div>
-                <div class="tech">
-                    <!-- <marquee direction="down" scrollamount="10"> -->
-                    <p class="tech-text">&nbsp;SQL C# JavaScript &nbsp;&nbsp;ASP.NET TypeScript</p>
-                    <!-- </marquee> -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="tech-bottom">
-        <!-- <marquee direction="down" scrollamount="10"> -->
-        <p class="tech-text">SQL C# JavaScript &nbsp;ASP.NET TypeScript</p>
-        <!-- </marquee> -->
-    </div>
-
-    <section class="projects">
-        <div class="container">
-            <h2>Реализованные проекты</h2>
-            <div class="row relative">
-                <div class="col-lg-6">
-                    <div class="tile-sm">
-                        <div class="text-center">
-                            <img src="/img/risad.png" width="100%" alt="РиСАД">
-                        </div>
-                        <div class="projects-content">
-                            <p class="projects-content-title">РиСАД</p>
-                            <p class="projects-content-text">Модуль «Ремонт и содержание автомобильных дорог»</p>
-                        </div>
-                    </div>
-                    <div class="tile-sm">
-                        <div class="text-center">
-                            <img src="/img/abdd.png" width="100%" alt="ГИС АБДД">
-                        </div>
-                        <div class="projects-content">
-                            <p class="projects-content-title">ГИС АБДД</p>
-                            <p class="projects-content-text">Отраслевая геоинформационная автоматизированная база дорожных данных</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="tile-sm">
-                        <div class="text-center">
-                            <img src="/img/project-3.png" width="100%" alt="">
-                        </div>
-                        <div class="projects-content">
-                            <p class="projects-content-title">Управление экономикой</p>
-                            <p class="projects-content-text pr-10">Стратегическое и долгосрочное планирование, Текущее и оперативное планирование и бюджетирование, Управление затратами и калькулирование себестоимости, Оптимизация затрат, Аналитическая отчётность</p>
-                        </div>
-                    </div>
-                    <div class="tile-sm last-project">
-                        <div class="text-center">
-                            <img src="/img/project-4.png" width="100%" alt="">
-                            <div class="projects-content empty-p"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-bottom-fade"></div>
-            </div>
-            <button type="button" class="btn btn-light w100">Посмотреть все проекты<span class="i-up-right i-up-right-blue"></span></button>
-        </div>
-    </section>
-
-    <section class="employees">
-        <div class="container">
-            <h2>Сотрудники</h2>
-            <div class="tiles-emps">
-                <div class="emp"></div>
-                <div class="emp-text">
-                    <p class="emp-text-sm">Специалист технической поддержки</p>
-                    <p class="emp-text-name">Константин Константинопольский</p>
-                    <p class="emp-text-description">Компания «Норд Диджитал» работает в дорожной отрасли и осуществляет разработку информационно-аналитических систем для автоматизации дорожной деятельности, проектирование и разработку интеллектуальных транспортных систем (АСУ дорожного
-                        движения).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="licenses">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2>Лицензии и сертификаты</h2>
-                    <p class="licenses-text">Задача организации, в особенности же перспективное планирование однозначно фиксирует необходимость форм воздействия. Принимая во внимание показатели успешности.</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="tiles-docs"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="partners">
-        <h2 class="text-center">Нам доверяют</h2>
-        <div class="str">&nbsp;
-            <ul class="partners-list">
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-1"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-2"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-3"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-4"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-5"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-6"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-7"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="str-2">&nbsp;
-            <ul class="partners-list">
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-7"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-8"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-9"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-10"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-1"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-2"></div>
-                </li>
-                <li class="partners-list-item">
-                    <div class="partners-img partners-list-item-3"></div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="career">
-        <div class="container">
-            <div class="row">
-                <div class="col-career-img">
-                    <div class="career-img"></div>
-                </div>
-                <div class="col-career-text career-description">
-                    <h2>Карьера</h2>
-                    <p class="career-text">
-                        Ознакомьтесь с открытыми вакансиями и оставляйте ваши отклики.
-                    </p>
-                    <p class="career-text">
-                        Мы внимательно рассмотрим каждое резюме и свяжемся с Вами.
-                    </p>
-                    <button type="button" class="btn btn-primary">Посмотреть вакансии<span class="i-up-right"></span></button>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- FOOTER -->
 

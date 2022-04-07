@@ -122,4 +122,10 @@ $(function() {
         onscroll(document, headerScrolled)
     }
 
+    // =======================
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
 });
