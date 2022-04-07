@@ -57,7 +57,14 @@ h2 {
 
 @media (max-width: 767px) {
     .container {
-        max-width: 408px;
+        max-width: 432px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .wrap-m {
+        max-width: 432px;
+        margin: 0 auto;
     }
 }
 
@@ -517,7 +524,7 @@ h2 {
 
 @media (min-width: 1201px) {
     .col-stat {
-        flex: 0 0 25%;
+        flex: 0 0 20%;
     }
 }
 
@@ -584,7 +591,7 @@ h2 {
 }
 
 .about .btn {
-    margin-top: 26px;
+    margin-top: 28px;
 }
 
 .about img {
@@ -768,8 +775,9 @@ h2 {
 
 @media (min-width: 1201px) {
     .col-activity {
-        width: 35%;
-        margin-right: 52px;
+        width: 34%;
+        /* margin-right: 52px; */
+        margin-right: 74px;
     }
     .activity-title {
         width: 50%;
@@ -781,7 +789,7 @@ h2 {
 
 @media (max-width: 1200px) {
     .activity {
-        margin-top: 112px!important;
+        margin-top: 110px!important;
     }
     .col-activity {
         width: 75%;
@@ -949,8 +957,17 @@ h2 {
 }
 
 @media (max-width: 767px) {
+    .projects {
+        margin-top: 96px;
+    }
     .projects h2 {
         font-size: 32px;
+    }
+    .projects .row {
+        margin-top: 33px;
+    }
+    .projects-content {
+        padding: 29px 20px 15px 23px;
     }
 }
 
@@ -1049,6 +1066,16 @@ h2 {
     .tiles-emps {
         width: 531px;
         padding: 92px 32px 40px 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .employees {
+        margin-top: 97px;
+    }
+    .tiles-emps {
+        width: 344px;
+        margin-top: 70px;
     }
 }
 
