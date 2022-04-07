@@ -68,16 +68,7 @@ h2 {
     }
 }
 
-
-/* ====================================================================================================== */
-
-
-/* --banner-- */
-
-
-/* ====================================================================================================== */
-
-.banner-container {
+.inner-container {
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
@@ -86,34 +77,43 @@ h2 {
 }
 
 @media (min-width: 1401px) {
-    .banner-container {
+    .inner-container {
         max-width: 1320px;
     }
 }
 
 @media (max-width: 1400px) {
-    .banner-container {
+    .inner-container {
         max-width: 1100px;
     }
 }
 
 @media (max-width: 1201px) {
-    .banner-container {
+    .inner-container {
         max-width: 898px;
     }
 }
 
 @media (max-width: 1023px) {
-    .banner-container {
+    .inner-container {
         max-width: 672px;
     }
 }
 
 @media (max-width: 767px) {
-    .banner-container {
+    .inner-container {
         max-width: 410px;
     }
 }
+
+
+/* ====================================================================================================== */
+
+
+/* --banner-- */
+
+
+/* ====================================================================================================== */
 
 .banner {
     margin-top: 164px!important;
@@ -594,6 +594,10 @@ h2 {
     display: none;
 }
 
+.tech-bottom-m {
+    display: none;
+}
+
 .activity-main {
     display: flex;
 }
@@ -706,6 +710,12 @@ h2 {
     .activity .row {
         padding-bottom: 24px;
     }
+    .tech-bottom {
+        display: none;
+    }
+    .tech-bottom-m {
+        display: block;
+    }
 }
 
 
@@ -803,7 +813,7 @@ h2 {
 
 @media (max-width: 767px) {
     .projects {
-        margin-top: 96px;
+        margin-top: 105px;
     }
     .projects h2 {
         font-size: 32px;
@@ -812,7 +822,7 @@ h2 {
         margin-top: 33px;
     }
     .projects-content {
-        padding: 29px 20px 15px 23px;
+        padding: 20px 20px 15px 23px;
     }
 }
 
@@ -916,11 +926,22 @@ h2 {
 
 @media (max-width: 767px) {
     .employees {
-        margin-top: 97px;
+        margin-top: 96px;
     }
     .tiles-emps {
-        width: 344px;
+        width: 368px;
+        height: 344px;
         margin-top: 70px;
+        padding: 92px 32px 40px 24px;
+    }
+    .emp-text-name {
+        font-size: 20px;
+    }
+    .emp {
+        top: -38px;
+        left: 24px;
+        width: 107px;
+        height: 115px;
     }
 }
 
@@ -983,6 +1004,20 @@ h2 {
 @media (max-width: 1023px) {
     .tiles-docs {
         width: 584px;
+    }
+}
+
+@media (max-width: 767px) {
+    .licenses {
+        margin-top: 124px;
+    }
+    .licenses-text {
+        font-size: 18px;
+    }
+    .tiles-docs {
+        width: 432px;
+        margin-top: 12px;
+        height: 300px;
     }
 }
 
@@ -1084,6 +1119,15 @@ h2 {
     }
 }
 
+@media (max-width: 767px) {
+    .partners {
+        margin-top: 125px;
+    }
+    .partners h2 {
+        margin-bottom: 0;
+    }
+}
+
 
 /* ====================================================================================================== */
 
@@ -1160,6 +1204,22 @@ h2 {
     }
     .col-career-text {
         flex: 0 0 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .career {
+        margin-top: -28px;
+    }
+    .col-career-text {
+        flex: 0 0 90%;
+        font-size: 18px;
+    }
+    .career-img {
+        height: 441px;
+    }
+    .career .btn {
+        margin-top: 43px;
     }
 }
 
@@ -1268,5 +1328,31 @@ h2 {
     }
     .navbar-footer {
         padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        margin-top: 94px;
+        padding-bottom: 0;
+    }
+    .navbar-footer {
+        margin-top: 34px;
+    }
+    .navbar-footer .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-footer-2 {
+        flex-basis: 60%;
+    }
+    .logo-2 {
+        width: 224px;
+        height: 44px;
+        background-size: cover;
+    }
+    .navbar-footer .navbar-nav .nav-link {
+        padding-right: 0!important;
+        padding-bottom: 16px;
     }
 }

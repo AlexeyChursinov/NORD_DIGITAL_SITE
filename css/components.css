@@ -322,6 +322,8 @@
   
   .swiper-activity-container {
       padding: 0;
+      padding-left: 18px;
+      padding-right: 18px;
   }
   
   .swiper .activity-icon {
