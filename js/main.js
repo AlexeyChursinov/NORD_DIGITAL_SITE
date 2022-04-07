@@ -25,7 +25,7 @@ $(function() {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '../img/cube.json'
+        path: './img/cube.json'
     });
 
     // ===============
