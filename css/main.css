@@ -35,6 +35,10 @@ h2 {
     padding-right: 10px;
 }
 
+.p0 {
+    padding: 0;
+}
+
 .w100 {
     width: 100%;
 }
@@ -878,7 +882,8 @@ h2 {
 .tiles-emps {
     position: relative;
     width: 870px;
-    margin-top: 58px;
+    margin-top: 26px;
+    /* margin-top: 58px; */
     border-radius: 16px;
     padding: 50px 64px 50px 48px;
     height: 262px;
@@ -927,6 +932,10 @@ h2 {
     .tiles-emps {
         width: 668px;
         height: 227px;
+        margin-left: 0;
+        margin-top: 98px;
+        /* margin-top: 132px; */
+        padding: 92px 32px 10px 32px;
     }
     .employees {
         margin-top: 114px;
@@ -942,11 +951,6 @@ h2 {
         left: 35px;
         width: 153px;
         height: 164px;
-    }
-    .tiles-emps {
-        margin-left: 0;
-        margin-top: 132px;
-        padding: 92px 32px 10px 32px;
     }
     .emp-text {
         margin-left: 0;

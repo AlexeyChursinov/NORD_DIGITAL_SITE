@@ -128,4 +128,14 @@ $(function() {
             el: ".swiper-pagination",
         },
     });
+
+    var swiperEmp = new Swiper(".swiperEmps", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 });

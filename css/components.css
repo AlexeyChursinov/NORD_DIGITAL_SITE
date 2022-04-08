@@ -267,6 +267,41 @@
       background-color: #2F80ED;
   }
   /* --SWIPER-- */
+  /* swiper employees */
+  
+  .swiper-emp-container {
+      max-width: 1154px;
+      margin: 0;
+  }
+  
+  .employees .swiper {
+      display: block;
+      height: 420px;
+      overflow: visible;
+  }
+  
+  .swiper-button-prev {
+      left: 80%;
+  }
+  
+  .swiper-button-next {
+      right: 5%;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+      top: -12%;
+  }
+  
+  .employees .swiper-slide {
+      background: transparent;
+  }
+  
+  .employees .swiper-item {
+      align-items: unset;
+      text-align: start;
+  }
+  /* swiper basic + statistic and activity */
   
   .swiper {
       width: 100%;
