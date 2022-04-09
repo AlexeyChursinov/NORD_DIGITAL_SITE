@@ -78,7 +78,6 @@
       flex-basis: 100%;
       flex-grow: 1;
       align-items: center;
-      background: #fff;
   }
   
   .navbar-toggler {
@@ -167,6 +166,12 @@
       }
       .navbar-expand-lg .navbar-toggler {
           display: none;
+      }
+  }
+  
+  @media (max-width: 1200px) {
+      .navbar-collapse {
+          background: #fff;
       }
   }
   
