@@ -130,6 +130,8 @@ $(function() {
     });
 
     var swiperEmp = new Swiper(".swiperEmps", {
+        slidesPerView: "auto",
+        centeredSlides: true,
         pagination: {
             el: ".swiper-pagination",
         },

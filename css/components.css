@@ -78,6 +78,7 @@
       flex-basis: 100%;
       flex-grow: 1;
       align-items: center;
+      background: #fff;
   }
   
   .navbar-toggler {
@@ -277,31 +278,68 @@
   .employees .swiper {
       display: block;
       height: 420px;
-      overflow: visible;
+      position: absolute;
+      top: -94px;
+      left: 0;
+      padding-top: 90px;
   }
   
   .swiper-button-prev {
-      left: 80%;
+      left: 1747px;
   }
   
   .swiper-button-next {
-      right: 5%;
+      right: 620px;
   }
   
   .swiper-button-prev,
   .swiper-button-next {
-      top: -12%;
+      display: block;
+      top: 30px;
   }
   
   .employees .swiper-slide {
       background: transparent;
+      margin-right: 137px;
   }
   
   .employees .swiper-item {
       align-items: unset;
       text-align: start;
   }
-  /* swiper basic + statistic and activity */
+  
+  .employees .swiper-pagination {
+      display: none;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+      content: "";
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+      background: #FFFFFF;
+      border-radius: 8px;
+      width: 80px;
+      height: 56px;
+      display: flex;
+  }
+  
+  .swiper-button-arrow-right {
+      background: url(../img/icons/arrow-right.svg) no-repeat center center;
+      background-size: cover;
+      width: 32px;
+      height: 32px;
+  }
+  
+  .swiper-button-arrow-left {
+      background: url(../img/icons/arrow-left.svg) no-repeat center center;
+      background-size: cover;
+      width: 32px;
+      height: 32px;
+  }
+  /* =================== */
   
   .swiper {
       width: 100%;
@@ -314,6 +352,7 @@
       font-size: 18px;
       border-radius: 16px;
       background: #fff;
+      /* Center slide text vertically */
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       -webkit-justify-content: center;
@@ -322,6 +361,11 @@
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
+  }
+  
+  .employees .swiper-slide {
+      display: flex;
+      width: auto;
   }
   
   .swiper-slide img {
@@ -355,12 +399,6 @@
       width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10%));
   }
   
-  .swiper-activity-container {
-      padding: 0;
-      padding-left: 18px;
-      padding-right: 18px;
-  }
-  
   .swiper .activity-icon {
       width: 50px;
       margin: 0;
@@ -376,13 +414,76 @@
       padding-bottom: 62px !important;
   }
   
+  @media (max-width: 1200px) {
+      .employees .swiper {
+          top: -84px;
+      }
+      .swiper-button-prev {
+          left: 764px;
+      }
+      .swiper-button-next {
+          right: 64px;
+      }
+      .employees .swiper-slide {
+          margin-right: 31px;
+      }
+      .employees .swiper {
+          padding-top: 90px;
+      }
+      .employees .swiper-wrapper {
+          position: absolute;
+          top: 20px;
+          left: -70px;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+          top: 22px;
+      }
+  }
+  
+  @media (max-width: 1023px) {
+      .employees .swiper {
+          padding-top: 106px;
+      }
+      .swiper-button-prev {
+          left: 532px;
+      }
+      .swiper-button-next {
+          right: 48px;
+      }
+      .employees .swiper-wrapper {
+          top: 26px;
+          left: -25px;
+      }
+  }
+  
   @media (max-width: 767px) {
+      .employees .swiper {
+          height: 465px;
+          padding-top: 90px;
+          padding-bottom: 90px!important;
+      }
       .swiper {
           display: block;
+      }
+      .employees .swiper-pagination {
+          display: block;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+          display: none;
+      }
+      .employees .swiper-wrapper {
+          top: 9px;
+          left: 11px;
       }
   }
   
   @media (max-width: 479px) {
+      .employees .swiper {
+          left: 6px;
+          padding-bottom: 120px!important;
+      }
       .swiper-pagination-bullet {
           width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20%));
           border-radius: 0;
