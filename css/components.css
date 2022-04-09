@@ -485,8 +485,12 @@
   }
   
   @media (max-width: 479px) {
+      .employees .swiper-wrapper {
+          top: 9px;
+          left: 20px;
+      }
       .employees .swiper {
-          left: 6px;
+          left: 0;
           padding-bottom: 120px!important;
       }
       .swiper-pagination-bullet {
