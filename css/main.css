@@ -1153,6 +1153,9 @@ h2 {
     .tiles-docs__links {
         margin-top: 60px;
     }
+    .tiles-docs__links a {
+        margin-right: 30px;
+    }
 }
 
 
