@@ -249,24 +249,19 @@
                     </div>
 
                     <div class="tech">
-                        <!-- <marquee direction="down" scrollamount="10"> -->
                         <p class="tech-text">&nbsp;SQL C# JavaScript &nbsp;&nbsp;ASP.NET TypeScript</p>
-                        <!-- </marquee> -->
                     </div>
                 </div>
             </div>
         </section>
-        <div class="tech-bottom">
-            <!-- <marquee direction="down" scrollamount="10"> -->
-            <p class="tech-text">SQL C# JavaScript &nbsp;ASP.NET TypeScript</p>
-            <!-- </marquee> -->
+        <div class="container">
+            <div class="tech-bottom">
+                <p class="tech-text">SQL C# JavaScript &nbsp;ASP.NET TypeScript</p>
+            </div>
+            <div class="tech-bottom-m">
+                <p class="tech-text">JavaScript C# ASP.NET</p>
+            </div>
         </div>
-        <div class="tech-bottom-m">
-            <!-- <marquee direction="down" scrollamount="10"> -->
-            <p class="tech-text">JavaScript C# ASP.NET</p>
-            <!-- </marquee> -->
-        </div>
-
         <section class="projects">
             <div class="container">
                 <h2>Реализованные проекты</h2>
@@ -315,8 +310,14 @@
         </section>
 
         <section class="employees">
-            <div class="container">
+            <div class="container relative">
                 <h2>Сотрудники</h2>
+                <div id="swiperNextEmp" class="swiper-button-next">
+                    <div class="swiper-button-arrow-right"></div>
+                </div>
+                <div id="swiperPrevEmp" class="swiper-button-prev">
+                    <div class="swiper-button-arrow-left"></div>
+                </div>
             </div>
             <!-- swiper -->
             <div class="relative">
@@ -365,12 +366,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next">
-                        <div class="swiper-button-arrow-right"></div>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <div class="swiper-button-arrow-left"></div>
-                    </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
@@ -386,7 +381,59 @@
                         <p class="licenses-text">Задача организации, в особенности же перспективное планирование однозначно фиксирует необходимость форм воздействия. Принимая во внимание показатели успешности.</p>
                     </div>
                     <div class="col-lg-6">
-                        <div class="tiles-docs"></div>
+                        <div class="tiles-docs">
+                            <div class="tiles-docs__item">
+                                <div class="swiper swiperLicenses">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-item">
+                                                <div class="tiles-docs__pdf"></div>
+                                                <p class="tiles-docs__text">Свидетельство о государственной аккредитации и обеспечении транспортной безопасности</p>
+                                                <div class="tiles-docs__links">
+                                                    <a href="#">Скачать</a>
+                                                    <a href="#">Посмотреть</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-item">
+                                                <div class="tiles-docs__pdf"></div>
+                                                <p class="tiles-docs__text">Свидетельство о государственной аккредитации и обеспечении транспортной безопасности</p>
+                                                <div class="tiles-docs__links">
+                                                    <a href="#">Скачать</a>
+                                                    <a href="#">Посмотреть</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-item">
+                                                <div class="tiles-docs__pdf"></div>
+                                                <p class="tiles-docs__text">Свидетельство о государственной аккредитации и обеспечении транспортной безопасности</p>
+                                                <div class="tiles-docs__links">
+                                                    <a href="#">Скачать</a>
+                                                    <a href="#">Посмотреть</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="licenses-swiper-navigation-wrap">
+                        <div id="swiperNext" class="swiper-button-next">
+                            <div class="swiper-button-arrow-right"></div>
+                        </div>
+                        <div class="licenses-swiper-pagination-wrap">
+                            <div class="licenses-swiper-pagination-wrap__pagination">
+                                <div class="swiper-pagination-licenses"></div>
+                            </div>
+                        </div>
+                        <div id="swiperPrev" class="swiper-button-prev">
+                            <div class="swiper-button-arrow-left"></div>
+                        </div>
                     </div>
                 </div>
             </div>

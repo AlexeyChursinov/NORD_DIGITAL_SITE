@@ -730,6 +730,9 @@ h2 {
         display: block;
         margin-top: 65px;
     }
+    .tech-text {
+        word-spacing: 3px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1026,6 +1029,41 @@ h2 {
     border-radius: 16px;
 }
 
+.tiles-docs__item {
+    padding: 40px;
+}
+
+.tiles-docs__pdf {
+    background: url(../img/icons/pdf.svg) no-repeat center center;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+}
+
+.tiles-docs__text {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.tiles-docs__links {
+    font-family: 'Mulish SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-top: 95px;
+}
+
+.tiles-docs__links a {
+    margin-right: 42px;
+    text-decoration: none;
+    color: #2F80ED;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.tiles-docs__links a:hover {
+    color: #56CCF2;
+}
+
 @media (min-width: 1201px) {
     .licenses .col-lg-4 {
         width: 37%;
@@ -1033,6 +1071,12 @@ h2 {
     }
     .licenses h2 {
         margin-top: 31px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .tiles-docs {
+        margin-left: 76px;
     }
 }
 
@@ -1053,6 +1097,12 @@ h2 {
     .licenses h2 {
         margin-top: 0;
     }
+    .tiles-docs__links {
+        margin-top: 125px;
+    }
+    .licenses .col-lg-6 {
+        width: 85%;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -1061,6 +1111,15 @@ h2 {
     }
     .licenses {
         margin-top: 604px;
+    }
+    .tiles-docs__text {
+        font-size: 18px;
+    }
+    .tiles-docs__item {
+        padding: 32px;
+    }
+    .tiles-docs__links {
+        margin-top: 150px;
     }
 }
 
@@ -1076,14 +1135,23 @@ h2 {
         margin-top: 12px;
         height: 300px;
     }
+    .tiles-docs__links {
+        margin-top: 68px;
+    }
 }
 
 @media (max-width: 479px) {
     .tiles-docs {
-        width: 260px;
+        width: 324px;
     }
     .licenses {
         margin-top: 660px;
+    }
+    .tiles-docs__text {
+        font-size: 16px;
+    }
+    .tiles-docs__links {
+        margin-top: 60px;
     }
 }
 

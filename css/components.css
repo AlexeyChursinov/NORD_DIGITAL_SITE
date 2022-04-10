@@ -255,7 +255,7 @@
   
   .btn-light:hover {
       color: #2F80ED;
-      background: rgba(47, 128, 237, 0.05);
+      background: rgba(47, 128, 237, 0.1);
   }
   
   .i-up-right {
@@ -289,18 +289,11 @@
       padding-top: 90px;
   }
   
-  .swiper-button-prev {
-      left: 1747px;
-  }
-  
-  .swiper-button-next {
-      right: 620px;
-  }
-  
-  .swiper-button-prev,
-  .swiper-button-next {
-      display: block;
-      top: 30px;
+  .employees .swiper-button-prev,
+  .employees .swiper-button-next {
+      /* display: block; */
+      /* top: 30px; */
+      top: 20px;
   }
   
   .employees .swiper-slide {
@@ -332,17 +325,91 @@
   }
   
   .swiper-button-arrow-right {
-      background: url(../img/icons/arrow-right.svg) no-repeat center center;
+      -webkit-mask-image: url(../img/icons/arrow-right.svg);
+      mask-image: url(../img/icons/arrow-right.svg);
+      background-color: #2F80ED;
       background-size: cover;
       width: 32px;
       height: 32px;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   }
   
   .swiper-button-arrow-left {
-      background: url(../img/icons/arrow-left.svg) no-repeat center center;
+      -webkit-mask-image: url(../img/icons/arrow-left.svg);
+      mask-image: url(../img/icons/arrow-left.svg);
+      background-color: #2F80ED;
       background-size: cover;
       width: 32px;
       height: 32px;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+  
+  .swiper-button-arrow-right:hover,
+  .swiper-button-arrow-left:hover {
+      background-color: #56CCF2;
+  }
+  /* =================== */
+  /* swiper licenses */
+  
+  .licenses .swiper {
+      display: block;
+      height: 305px;
+  }
+  
+  .licenses .swiper-slide {
+      text-align: start;
+  }
+  
+  .licenses .swiper-item {
+      display: block;
+  }
+  
+  .licenses-swiper-navigation-wrap {
+      position: relative;
+      flex: 0 0 12%;
+  }
+  
+  #swiperNext {
+      top: 321px;
+      left: 75px;
+  }
+  
+  #swiperPrev {
+      top: 22px;
+      left: 75px;
+  }
+  
+  .licenses-swiper-navigation-wrap {
+      display: block;
+  }
+  
+  .licenses-swiper-pagination-wrap {
+      display: block;
+      position: absolute;
+      width: 80px;
+      height: 227px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      left: 75px;
+      top: 64px;
+  }
+  
+  .licenses-swiper-pagination-wrap__pagination {
+      position: relative;
+      width: 70px;
+      height: 225px;
+      margin-left: 5px;
+  }
+  
+  .swiper-pagination-licenses {
+      position: absolute;
+      top: 110px;
+      margin-left: 16px;
+  }
+  
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin-top: 10px;
   }
   /* =================== */
   
@@ -394,7 +461,10 @@
       padding-bottom: 43px !important;
   }
   
-  .swiper-pagination-bullet {
+  .licenses .swiper-pagination-bullet,
+  .statistic .swiper-pagination-bullet,
+  .activity .swiper-pagination-bullet,
+  .employees .swiper-pagination-bullet {
       width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 23%));
       height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 4px));
       border-radius: 0;
@@ -419,46 +489,80 @@
       padding-bottom: 62px !important;
   }
   
+  .employees .swiper-button-prev {
+      right: 116px;
+      left: auto;
+  }
+  
+  .employees .swiper-button-next {
+      right: 20px;
+  }
+  
   @media (max-width: 1200px) {
       .employees .swiper {
           top: -84px;
       }
-      .swiper-button-prev {
-          left: 764px;
+      .employees .swiper-button-prev {
+          right: 125px;
+          left: auto;
       }
-      .swiper-button-next {
-          right: 64px;
+      .employees .swiper-button-next {
+          right: 15px;
       }
       .employees .swiper-slide {
           margin-right: 31px;
-      }
-      .employees .swiper {
-          padding-top: 90px;
       }
       .employees .swiper-wrapper {
           position: absolute;
           top: 20px;
           left: -70px;
       }
-      .swiper-button-prev,
-      .swiper-button-next {
-          top: 22px;
+      .employees .swiper-button-prev,
+      .employees .swiper-button-next {
+          top: 20px;
+      }
+      .licenses-swiper-navigation-wrap {
+          flex: 0 0 15%;
+      }
+      #swiperNext {
+          top: 340px;
+          left: 46px;
+      }
+      #swiperPrev {
+          top: 40px;
+          left: 46px;
+      }
+      .licenses-swiper-pagination-wrap {
+          left: 46px;
+          top: 82px;
       }
   }
   
   @media (max-width: 1023px) {
+      .employees .swiper-button-prev,
+      .employees .swiper-button-next {
+          top: 18px;
+      }
       .employees .swiper {
           padding-top: 106px;
       }
-      .swiper-button-prev {
-          left: 532px;
+      .employees .swiper-button-prev {
+          right: 117px;
+          left: auto;
       }
-      .swiper-button-next {
-          right: 48px;
+      .employees .swiper-button-next {
+          right: 15px;
       }
       .employees .swiper-wrapper {
           top: 26px;
           left: -25px;
+      }
+      #swiperNext,
+      #swiperPrev {
+          left: 12px;
+      }
+      .licenses-swiper-pagination-wrap {
+          left: 12px;
       }
   }
   
@@ -474,13 +578,22 @@
       .employees .swiper-pagination {
           display: block;
       }
-      .swiper-button-prev,
-      .swiper-button-next {
+      .employees .swiper-button-prev,
+      .employees .swiper-button-next {
           display: none;
       }
       .employees .swiper-wrapper {
           top: 9px;
           left: 11px;
+      }
+      .licenses-swiper-navigation-wrap {
+          display: none;
+      }
+      .licenses .swiper {
+          height: 270px;
+      }
+      .licenses-swiper-pagination-wrap {
+          display: none;
       }
   }
   
@@ -493,7 +606,10 @@
           left: 0;
           padding-bottom: 120px!important;
       }
-      .swiper-pagination-bullet {
+      .licenses .swiper-pagination-bullet,
+      .statistic .swiper-pagination-bullet,
+      .activity .swiper-pagination-bullet,
+      .employees .swiper-pagination-bullet {
           width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20%));
           border-radius: 0;
       }
