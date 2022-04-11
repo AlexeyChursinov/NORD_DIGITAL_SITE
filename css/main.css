@@ -39,6 +39,10 @@ h2 {
     padding: 0;
 }
 
+.mt0 {
+    margin-top: 0;
+}
+
 .w100 {
     width: 100%;
 }
@@ -66,7 +70,7 @@ h2 {
     h2 {
         font-size: 32px;
     }
-    .wrap-m {
+    .banner__wrap-m {
         max-width: 432px;
         margin: 0 auto;
     }
@@ -140,16 +144,31 @@ h2 {
     background: #FFFFFF;
 }
 
-.banner-text {
+.banner__text {
     font-family: "Montserrat Alternates SemiBold", sans-serif;
     font-size: 56px;
     line-height: 125%;
     margin: 0;
+}
+
+.banner__text-home {
     padding-top: 270px;
     padding-bottom: 200px;
 }
 
-.banner-text span {
+.banner__text-comp {
+    padding-top: 182px;
+    padding-bottom: 213px;
+}
+
+.banner__text-sm {
+    font-family: 'Mulish Light';
+    font-size: 20px;
+    line-height: 175%;
+    color: #6E7582;
+}
+
+.banner__text span {
     color: #2F80ED;
 }
 
@@ -159,6 +178,16 @@ h2 {
     position: absolute;
     top: -85px;
     left: -28px;
+}
+
+.rings {
+    background: url(../img/rings.png) no-repeat center center;
+    background-size: cover;
+    width: 524px;
+    height: 610px;
+    position: absolute;
+    top: 0;
+    left: 116px;
 }
 
 
@@ -191,9 +220,19 @@ h2 {
     transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.col-banner {
+.banner__col {
     flex: 0 0 auto;
     width: 50%;
+}
+
+.banner__col-text {
+    flex: 0 0 auto;
+    width: 60%;
+}
+
+.banner__col-img {
+    flex: 0 0 auto;
+    width: 40%;
 }
 
 @media (min-width: 1601px) {
@@ -219,8 +258,10 @@ h2 {
     .banner {
         margin-top: 150px!important;
     }
-    .banner-text {
+    .banner__text {
         font-size: 50px;
+    }
+    .banner__text-home {
         padding-top: 207px;
         padding-bottom: 190px;
     }
@@ -257,11 +298,27 @@ h2 {
         top: -32px;
         left: -16px;
     }
+    .banner__col-text {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .rings {
+        width: 398px;
+        height: 464px;
+        top: 0;
+        left: 116px;
+    }
+    .banner__text-comp {
+        padding-top: 104px;
+        padding-bottom: 135px;
+    }
     .banner {
         margin-top: 114px!important;
     }
-    .banner-text {
+    .banner__text {
         font-size: 40px;
+    }
+    .banner__text-home {
         padding-top: 207px;
         padding-bottom: 157px;
     }
@@ -286,8 +343,10 @@ h2 {
     .banner {
         margin-top: 106px!important;
     }
-    .banner-text {
+    .banner__text {
         font-size: 32px;
+    }
+    .banner__text-home {
         padding-top: 150px;
         padding-bottom: 157px;
     }
@@ -309,11 +368,13 @@ h2 {
         top: -477px;
         left: 63px;
     }
-    .col-banner {
+    .banner__col {
         flex-basis: 100%;
     }
-    .banner-text {
+    .banner__text {
         text-align: center;
+    }
+    .banner__text-home {
         padding-top: 345px;
         padding-bottom: 20px;
     }
@@ -341,8 +402,10 @@ h2 {
         top: -448px;
         left: 12px;
     }
-    .banner-text {
+    .banner__text {
         font-size: 24px;
+    }
+    .banner__text-home {
         padding-top: 334px;
     }
     .banner .tiles {
@@ -460,7 +523,7 @@ h2 {
     line-height: 175%;
 }
 
-.about-content {
+.about__content-home {
     margin-top: 117px;
     padding-right: 14px;
 }
@@ -473,12 +536,20 @@ h2 {
     display: block;
 }
 
-.col-about {
+.about__col {
     flex: 0 0 50%;
 }
 
+.about__col-title {
+    flex: 0 0 41.7%;
+}
+
+.about__col-content {
+    flex: 0 0 57%;
+}
+
 @media (max-width: 1400px) {
-    .about-content {
+    .about__content-home {
         margin-top: 55px;
     }
 }
@@ -487,13 +558,13 @@ h2 {
     .about img {
         display: none;
     }
-    .col-about {
+    .about__col {
         flex: 0 0 100%;
     }
     .about {
         margin-top: 112px;
     }
-    .about-content {
+    .about__content-home {
         margin-top: 0;
     }
     .about .container {
@@ -1010,8 +1081,11 @@ h2 {
 --LICENSES--
 ====================================================================================================== */
 
-.licenses {
-    /* margin-top: 216px; */
+.licenses-mt {
+    margin-top: 216px;
+}
+
+.licenses-mt-emp {
     margin-top: 636px;
 }
 
@@ -1087,7 +1161,7 @@ h2 {
         width: 808px;
         height: 355px;
     }
-    .licenses {
+    .licenses-mt-emp {
         margin-top: 573px;
     }
     .licenses .col-lg-4 {
@@ -1124,7 +1198,7 @@ h2 {
 }
 
 @media (max-width: 767px) {
-    .licenses {
+    .licenses-mt-emp {
         margin-top: 670px;
     }
     .licenses-text {
@@ -1144,7 +1218,7 @@ h2 {
     .tiles-docs {
         width: 324px;
     }
-    .licenses {
+    .licenses-mt-emp {
         margin-top: 660px;
     }
     .tiles-docs__text {
@@ -1359,6 +1433,15 @@ h2 {
     .career-text {
         font-size: 18px;
     }
+}
+
+
+/* ====================================================================================================== 
+--CHIEF-- 
+====================================================================================================== */
+
+.chief-mt {
+    margin-top: 216px;
 }
 
 
