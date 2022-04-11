@@ -50,6 +50,13 @@
  }
  
  @font-face {
+     font-family: 'Mulish SemiBold';
+     src: url('../fonts/Mulish/Mulish-SemiBold.ttf');
+     font-weight: 600;
+     font-style: normal;
+ }
+ 
+ @font-face {
      font-family: 'Mulish Bold';
      src: url('../fonts/Mulish/Mulish-Bold.ttf');
      font-weight: 700;
