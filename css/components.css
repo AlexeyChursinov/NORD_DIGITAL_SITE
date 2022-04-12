@@ -301,11 +301,6 @@
       align-items: center;
   }
   
-  .employees .swiper-slide {
-      display: flex;
-      width: auto;
-  }
-  
   .swiper-slide img {
       display: block;
       width: 100%;
@@ -379,7 +374,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      padding-top: 50px;
+      padding-top: 14px;
+      padding-bottom: 0!important;
   }
   
   .swiper-scroll .swiper-slide {
@@ -390,6 +386,30 @@
       display: flex;
       width: auto;
       text-align: start;
+  }
+  
+  .swiper-scrollbar-drag {
+      position: relative;
+      background: url(../img/hexagon.png) no-repeat center center;
+      background-size: cover;
+      width: 36px!important;
+      height: 36px;
+      left: 0;
+      top: -15px;
+      cursor: grab;
+  }
+  
+  .swiper-horizontal>.swiper-scrollbar {
+      left: 20%;
+      width: 60%;
+  }
+  
+  .swiper-scrollbar {
+      background: #D0DBEC;
+  }
+  
+  .swiper-horizontal>.swiper-scrollbar {
+      bottom: 38px;
   }
   /* swiper employees */
   
@@ -413,6 +433,8 @@
   }
   
   .employees .swiper-slide {
+      display: flex;
+      width: auto;
       background: transparent;
       margin-right: 137px;
   }

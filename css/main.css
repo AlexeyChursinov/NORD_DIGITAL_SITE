@@ -1550,11 +1550,26 @@ h2 {
 
 .tiles-features {
     position: relative;
-    width: 496px;
+    width: 416px;
+    height: 150px;
     border-radius: 16px;
     padding: 40px 40px 67px 40px;
     background-color: #FFFFFF;
-    margin-right: 34px;
+    margin-right: 18px;
+}
+
+.tiles-features__title {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 24px;
+    line-height: 125%;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tiles-features__description {
+    font-family: 'Mulish Light';
+    font-size: 18px;
+    line-height: 150%;
 }
 
 

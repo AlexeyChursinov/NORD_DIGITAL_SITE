@@ -47,9 +47,12 @@ $(function() {
         scrollbar: {
             el: ".swiper-scrollbar",
             hide: false,
-            draggable: true
+            draggable: true,
+            snapOnRelease: false,
+            dragSize: 100,
         },
         grabCursor: true,
+        initialSlide: 1,
     });
 
 })
