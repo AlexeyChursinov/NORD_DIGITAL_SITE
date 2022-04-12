@@ -613,7 +613,11 @@ h2 {
 --ACTIVITY-- 
 ====================================================================================================== */
 
-.activity {
+.activity-mt-comp {
+    margin-top: 340px!important;
+}
+
+.activity-mt-home {
     margin-top: 216px!important;
 }
 
@@ -745,7 +749,7 @@ h2 {
 }
 
 @media (max-width: 1200px) {
-    .activity {
+    .activity-mt-home {
         margin-top: 110px!important;
     }
     .col-activity {
@@ -807,7 +811,7 @@ h2 {
 }
 
 @media (max-width: 767px) {
-    .activity {
+    .activity-mt-home {
         margin-top: 94px!important;
     }
     .activity h2 {
@@ -963,13 +967,10 @@ h2 {
 .tiles-emps {
     position: relative;
     width: 870px;
-    /* margin-top: 26px; */
-    /* margin-top: 58px; */
     border-radius: 16px;
     padding: 50px 64px 50px 48px;
     height: 262px;
     background-color: #FFFFFF;
-    /* margin-left: 116px; */
     margin-left: 34px;
 }
 
@@ -1081,8 +1082,8 @@ h2 {
 --LICENSES--
 ====================================================================================================== */
 
-.licenses-mt {
-    margin-top: 216px;
+.licenses-mt-comp {
+    margin-top: 200px;
 }
 
 .licenses-mt-emp {
@@ -1547,13 +1548,29 @@ h2 {
     margin: 0 auto;
 }
 
+.tiles-features {
+    position: relative;
+    width: 496px;
+    border-radius: 16px;
+    padding: 40px 40px 67px 40px;
+    background-color: #FFFFFF;
+    margin-right: 34px;
+}
+
 
 /* ====================================================================================================== 
 --FOOTER-- 
 ====================================================================================================== */
 
-.footer {
+.footer-mt-comp {
+    margin-top: 216px;
+}
+
+.footer-mt-home {
     margin-top: 112px;
+}
+
+.footer {
     padding-top: 50px;
     padding-bottom: 65px;
     background: #0C131D;
@@ -1643,7 +1660,7 @@ h2 {
 }
 
 @media (max-width: 1200px) {
-    .footer {
+    .footer-mt-home {
         margin-top: 110px;
         padding-bottom: 35px;
     }

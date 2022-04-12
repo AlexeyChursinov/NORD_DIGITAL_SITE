@@ -20,16 +20,6 @@ $(function() {
         grabCursor: true,
     });
 
-    // const swiperPrevEmp = document.getElementById('swiperPrevEmp')
-    // const swiperNextEmp = document.getElementById('swiperNextEmp')
-
-    // swiperPrevEmp.addEventListener('click', () => {
-    //     mySwiper.slidePrev();
-    // })
-    // swiperNextEmp.addEventListener('click', () => {
-    //     mySwiper.slideNext();
-    // })
-
     var swiperLicenses = new Swiper(".swiperLicenses", {
         pagination: {
             el: ".swiper-pagination",
@@ -51,13 +41,15 @@ $(function() {
         }
     });
 
-    // const swiperPrev = document.getElementById('swiperPrev')
-    // const swiperNext = document.getElementById('swiperNext')
+    var swiperScroll = new Swiper(".swiperScroll", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: false,
+            draggable: true
+        },
+        grabCursor: true,
+    });
 
-    // swiperPrev.addEventListener('click', () => {
-    //     mySwiper.slidePrev();
-    // })
-    // swiperNext.addEventListener('click', () => {
-    //     mySwiper.slideNext();
-    // })
 })
