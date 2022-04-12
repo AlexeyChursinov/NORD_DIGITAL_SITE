@@ -279,10 +279,95 @@
   }
   /* --SWIPER-- */
   
+  .swiper {
+    width: 100%;
+    height: 187px;
+    display: none;
+    padding-bottom: 43px !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 16px;
+    background: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.employees .swiper-slide {
+    display: flex;
+    width: auto;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 80px;
+    height: 56px;
+    display: flex;
+}
+
+.swiper-button-arrow-right {
+    -webkit-mask-image: url(../img/icons/arrow-right.svg);
+    mask-image: url(../img/icons/arrow-right.svg);
+    background-color: #2F80ED;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.swiper-button-arrow-left {
+    -webkit-mask-image: url(../img/icons/arrow-left.svg);
+    mask-image: url(../img/icons/arrow-left.svg);
+    background-color: #2F80ED;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.swiper-button-arrow-right:hover,
+.swiper-button-arrow-left:hover {
+    background-color: #56CCF2;
+}
+
   .swiper-button-next.swiper-button-disabled,
   .swiper-button-prev.swiper-button-disabled {
       opacity: .65;
   }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin-top: 10px;
+  }
+
   /* swiper employees */
   
   .swiper-emp-container {
@@ -318,45 +403,6 @@
       display: none;
   }
   
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-      content: "";
-  }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-      background: #FFFFFF;
-      border-radius: 8px;
-      width: 80px;
-      height: 56px;
-      display: flex;
-  }
-  
-  .swiper-button-arrow-right {
-      -webkit-mask-image: url(../img/icons/arrow-right.svg);
-      mask-image: url(../img/icons/arrow-right.svg);
-      background-color: #2F80ED;
-      background-size: cover;
-      width: 32px;
-      height: 32px;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  }
-  
-  .swiper-button-arrow-left {
-      -webkit-mask-image: url(../img/icons/arrow-left.svg);
-      mask-image: url(../img/icons/arrow-left.svg);
-      background-color: #2F80ED;
-      background-size: cover;
-      width: 32px;
-      height: 32px;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  }
-  
-  .swiper-button-arrow-right:hover,
-  .swiper-button-arrow-left:hover {
-      background-color: #56CCF2;
-  }
-  
   .employees .swiper-button-prev {
       right: 116px;
       left: auto;
@@ -365,7 +411,7 @@
   .employees .swiper-button-next {
       right: 20px;
   }
-  /* =================== */
+ 
   /* swiper licenses */
   
   .licenses .swiper {
@@ -423,53 +469,8 @@
       top: 110px;
       margin-left: 16px;
   }
-  
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-      margin-top: 10px;
-  }
+   
   /* =================== */
-  
-  .swiper {
-      width: 100%;
-      height: 187px;
-      display: none;
-      padding-bottom: 43px !important;
-  }
-  
-  .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      border-radius: 16px;
-      background: #fff;
-      /* Center slide text vertically */
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-  }
-  
-  .employees .swiper-slide {
-      display: flex;
-      width: auto;
-  }
-  
-  .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-  
-  .swiper-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
   
   .statistic .swiper-item {
       margin-top: 48px;

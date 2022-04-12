@@ -1502,6 +1502,7 @@ h2 {
     justify-content: space-between;
     padding: 17px 35px 11px 45px;
     border-radius: 12px;
+    margin-bottom: 16px;
     background: #FFFFFF;
 }
 
@@ -1518,6 +1519,32 @@ h2 {
     font-size: 18px;
     line-height: 150%;
     color: #6E7582;
+}
+
+.comp-structure__point {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(76.96% 76.96% at 0% 0%, #51D6ED 0%, #428FE6 100%);
+    margin-right: 38px;
+}
+
+
+/* ====================================================================================================== 
+--COMPANY FEATURES-- 
+====================================================================================================== */
+
+.comp-features {
+    margin-top: 54px;
+}
+
+.slider-back {
+    background: url(../img/comp-slider-back.png) no-repeat center center;
+    background-size: cover;
+    width: 1792px;
+    height: 282px;
+    margin: 0 auto;
 }
 
 
