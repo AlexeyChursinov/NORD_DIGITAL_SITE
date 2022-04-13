@@ -182,7 +182,7 @@ h2 {
 
 .rings {
     background: url(../img/rings.png) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     width: 524px;
     height: 610px;
     position: absolute;
@@ -570,6 +570,12 @@ h2 {
     .about .container {
         max-width: 894px;
     }
+    .about__col-title {
+        flex: 0 0 100%;
+    }
+    .about__col-content {
+        flex: 0 0 100%;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -785,6 +791,9 @@ h2 {
     }
     .activity-main {
         display: block;
+    }
+    .activity-mt-comp {
+        margin-top: 235px!important;
     }
 }
 
@@ -1110,7 +1119,7 @@ h2 {
 
 .tiles-docs__pdf {
     background: url(../img/icons/pdf.svg) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     width: 48px;
     height: 48px;
 }
@@ -1177,6 +1186,9 @@ h2 {
     }
     .licenses .col-lg-6 {
         width: 85%;
+    }
+    .licenses-mt-comp {
+        margin-top: 97px;
     }
 }
 
@@ -1445,9 +1457,19 @@ h2 {
     margin-top: 216px;
 }
 
+.chief__col-img {
+    flex: 0 0 auto;
+    width: 34%;
+}
+
+.chief__col-text {
+    flex: 0 0 auto;
+    width: 60%;
+}
+
 .chief__img {
     background: url(../img/Chief.png) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     width: 341px;
     height: 368px;
     margin-left: 93px;
@@ -1478,6 +1500,25 @@ h2 {
     margin-top: 6px;
 }
 
+@media (max-width: 1200px) {
+    .chief__img {
+        margin-left: 0;
+    }
+    .chief__text h2 {
+        font-size: 32px;
+    }
+    .chief__col-text {
+        width: 65%;
+    }
+    .chief-mt {
+        margin-top: 112px;
+    }
+    .chief__text {
+        margin-left: 75px;
+        margin-top: 51px;
+    }
+}
+
 
 /* ====================================================================================================== 
 --STRUCTURE-- 
@@ -1487,9 +1528,19 @@ h2 {
     margin-top: 216px;
 }
 
+.comp-structure__col-planes {
+    flex: 0 0 auto;
+    width: 66.6%;
+}
+
+.comp-structure__col-img {
+    flex: 0 0 auto;
+    width: 33.3%;
+}
+
 .comp-structure__logo_main {
     background: url(../img/structure-logo-1.png) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     width: 416px;
     height: 644px;
 }
@@ -1531,6 +1582,33 @@ h2 {
     margin-right: 38px;
 }
 
+.comp-structure__logo_top {
+    display: none;
+    margin-top: 40px;
+    background: url(../img/structure-logo-2.png) no-repeat center center;
+    background-size: contain;
+    width: 896px;
+    height: 255px;
+}
+
+@media (max-width: 1200px) {
+    .comp-structure__col-planes {
+        width: 100%;
+    }
+    .comp-structure__col-img {
+        display: none;
+    }
+    .comp-structure__logo_top {
+        display: block;
+    }
+    .comp-structure .row {
+        margin-top: 16px;
+    }
+    .comp-structure {
+        margin-top: 112px;
+    }
+}
+
 
 /* ====================================================================================================== 
 --COMPANY FEATURES-- 
@@ -1542,7 +1620,7 @@ h2 {
 
 .slider-back {
     background: url(../img/comp-slider-back.png) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     width: 1792px;
     height: 282px;
     margin: 0 auto;
@@ -1570,6 +1648,14 @@ h2 {
     font-family: 'Mulish Light';
     font-size: 18px;
     line-height: 150%;
+}
+
+@media (max-width: 1200px) {
+    .slider-back {
+        background: url(../img/comp-slider-back-1024.png) no-repeat center center;
+        width: 992px;
+        height: 282px;
+    }
 }
 
 
@@ -1672,6 +1758,10 @@ h2 {
     .footer-contacts {
         margin-top: 41px;
     }
+    .footer-mt-comp {
+        margin-top: 112px;
+        padding-bottom: 35px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1708,7 +1798,7 @@ h2 {
     .logo-2 {
         width: 224px;
         height: 44px;
-        background-size: cover;
+        background-size: contain;
     }
     .navbar-footer .navbar-nav .nav-link {
         padding-bottom: 16px;
