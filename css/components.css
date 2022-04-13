@@ -613,6 +613,9 @@
       .licenses-swiper-pagination-wrap {
           left: 12px;
       }
+      .swiper-scroll .swiper {
+          top: 40px;
+      }
   }
   
   @media (max-width: 767px) {
@@ -644,6 +647,11 @@
       .licenses-swiper-pagination-wrap {
           display: none;
       }
+      .swiper-horizontal>.swiper-scrollbar {
+          bottom: 20px;
+          left: 10%;
+          width: 80%;
+      }
   }
   
   @media (max-width: 479px) {
@@ -664,5 +672,8 @@
       }
       .activity .swiper-pagination-bullet {
           width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10%));
+      }
+      .licenses .swiper {
+          height: 238px;
       }
   }
