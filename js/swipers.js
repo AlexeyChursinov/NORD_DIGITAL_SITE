@@ -52,7 +52,12 @@ $(function() {
             dragSize: 100,
         },
         grabCursor: true,
-        initialSlide: 1,
+        initialSlide: 0,
+        breakpoints: {
+            1024: {
+                initialSlide: 1,
+            }
+        },
     });
 
 })
