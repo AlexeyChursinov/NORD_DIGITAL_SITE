@@ -2216,13 +2216,37 @@ h2 {
         margin-top: 30px;
     }
     .stack__content {
-        padding: 41px 41px 23px 41px;
+        padding: 41px 41px 15px 41px;
     }
     .stack__item {
-        width: 50%;
+        width: 47.96%;
+        margin-bottom: 24px;
     }
     .stack__item:not(:first-child) {
         margin-left: 0;
+    }
+    .stack__item:nth-child(2),
+    .stack__item:nth-child(4) {
+        margin-left: 12px;
+    }
+    .stack__item:nth-child(1),
+    .stack__item:nth-child(3) {
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .stack__item {
+        width: 47.71%;
+        margin-bottom: 16px;
+    }
+    .stack__item:nth-child(2),
+    .stack__item:nth-child(4) {
+        margin-left: 8px;
+    }
+    .stack__item:nth-child(1),
+    .stack__item:nth-child(3) {
+        margin-right: 8px;
     }
 }
 
