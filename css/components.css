@@ -263,6 +263,21 @@
       background: rgba(47, 128, 237, 0.1);
   }
   
+  .consult-btn {
+      margin-top: 70px;
+  }
+  
+  .i-info {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      margin-left: 15px;
+      -webkit-mask-image: url(../img/icons/info.svg);
+      mask-image: url(../img/icons/info.svg);
+      background-color: #FFFFFF;
+  }
+  
   .i-up-right {
       display: inline-block;
       width: 32px;

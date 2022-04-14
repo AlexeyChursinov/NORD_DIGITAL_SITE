@@ -190,6 +190,15 @@ h2 {
     left: 116px;
 }
 
+.banner__col-text_services-p {
+    padding-right: 110px;
+}
+
+.banner__text-services {
+    padding-top: 83px;
+    padding-bottom: 112px;
+}
+
 
 /* for text animation */
 
@@ -225,7 +234,8 @@ h2 {
     width: 50%;
 }
 
-.banner__col-text {
+.banner__col-text,
+.banner__col-text-serv {
     flex: 0 0 auto;
     width: 60%;
 }
@@ -286,6 +296,12 @@ h2 {
         height: 595px;
         left: 38px;
     }
+    .banner__col-text_services-p {
+        padding-right: 180px;
+    }
+    .banner__text-services {
+        padding-bottom: 120px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -300,6 +316,9 @@ h2 {
         width: 510px;
         height: 595px;
         left: 18px;
+    }
+    .banner__col-text_services-p {
+        padding-right: 120px;
     }
 }
 
@@ -322,7 +341,8 @@ h2 {
         top: -32px;
         left: -16px;
     }
-    .banner__col-text {
+    .banner__col-text,
+    .banner__col-text-serv {
         flex: 0 0 auto;
         width: 50%;
     }
@@ -348,6 +368,13 @@ h2 {
     }
     .word {
         top: 157px;
+    }
+    .banner__col-text_services-p {
+        padding-right: 0;
+    }
+    .banner__text-services {
+        padding-top: 41px;
+        padding-bottom: 68px;
     }
 }
 
@@ -382,9 +409,21 @@ h2 {
         height: 336px;
         left: 97px;
     }
+    .rings-services {
+        left: 25px;
+    }
     .banner__text-comp {
         padding-top: 55px;
         padding-bottom: 70px;
+    }
+    .banner__col-text-serv {
+        width: 60%;
+    }
+    .banner__text-services {
+        padding-top: 22px;
+    }
+    .consult-btn {
+        margin-top: 46px;
     }
 }
 
@@ -422,7 +461,8 @@ h2 {
         height: 32px;
         background-size: contain;
     }
-    .banner__col-text {
+    .banner__col-text,
+    .banner__col-text-serv {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
@@ -451,7 +491,7 @@ h2 {
     .banner__text-comp {
         padding-bottom: 45px;
     }
-    .banner__tiles-comp {
+    .banner__tiles-rings {
         height: 444px!important;
     }
 }
@@ -483,7 +523,7 @@ h2 {
         height: 137px;
         width: 328px;
     }
-    .banner__tiles-comp {
+    .banner__tiles-rings {
         height: 365px!important;
     }
     .banner__text-comp {
@@ -710,6 +750,10 @@ h2 {
     margin-top: 340px!important;
 }
 
+.activity-services {
+    margin-top: 137px!important;
+}
+
 .activity-mt-home {
     margin-top: 216px!important;
 }
@@ -734,6 +778,10 @@ h2 {
     width: 160px;
     height: 70px;
     margin-top: 10px;
+}
+
+.activity-icon-serv {
+    width: 112px;
 }
 
 .activity .row {
@@ -761,10 +809,18 @@ h2 {
     margin-right: 33px;
 }
 
+.i-d-serv {
+    width: 74px;
+}
+
 .i-quad {
     background: url(../img/icons/quad.svg) no-repeat;
     width: 100px;
     margin-right: 33px;
+}
+
+.i-q-serv {
+    width: 72px;
 }
 
 .i-bar {
@@ -808,9 +864,16 @@ h2 {
     display: flex;
 }
 
+.ml-serv {
+    margin-left: 102px;
+}
+
 @media (max-width: 1400px) {
     .activity-icon {
         width: 196px;
+    }
+    .activity-icon-serv {
+        width: 140px;
     }
     .i-doughnut {
         margin-right: 8px;
@@ -826,6 +889,19 @@ h2 {
         width: 80px;
         margin-right: 16px;
     }
+    .ml-serv {
+        margin-left: 45px;
+    }
+    .col-activity-services {
+        flex: 0 0 auto;
+        width: 54%;
+    }
+    .activity-services .i-bar {
+        margin-right: 9px;
+    }
+    .activity-services .i-map {
+        margin-right: 9px;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -838,6 +914,9 @@ h2 {
     }
     .mt-i-map {
         margin-top: 1rem;
+    }
+    .col-activity-services {
+        width: 50%;
     }
 }
 
@@ -854,6 +933,9 @@ h2 {
     }
     .activity-icon {
         width: 103px;
+    }
+    .activity-icon-serv {
+        width: 55px;
     }
     .activity-text {
         margin-top: 18px;
@@ -882,6 +964,21 @@ h2 {
     .activity-mt-comp {
         margin-top: 235px!important;
     }
+    .activity-services {
+        margin-top: 33px!important;
+    }
+    .ml-serv {
+        margin-left: 0;
+    }
+    .activity-icon-serv {
+        width: 71px;
+    }
+    .activity-services .row {
+        padding-bottom: 48px;
+    }
+    .col-activity-services {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -906,6 +1003,13 @@ h2 {
     }
     .activity-mt-comp {
         margin-top: 276px!important;
+    }
+    .activity-icon-serv {
+        width: 100px;
+    }
+    .activity-services .i-bar,
+    .activity-services .i-map {
+        width: 72px;
     }
 }
 
@@ -1942,6 +2046,183 @@ h2 {
         background: url(../img/comp-slider-back-360.png) no-repeat center center;
         width: 344px;
         height: 219px;
+    }
+}
+
+
+/* ====================================================================================================== 
+--STACK-- 
+====================================================================================================== */
+
+.stack {
+    margin-top: 137px;
+}
+
+.stack_description {
+    font-family: 'Mulish';
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 46px;
+}
+
+.stack__tiles {
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.stack__content {
+    padding: 64px 64px 30px 64px;
+}
+
+.stack__title {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 28px;
+    line-height: 125%;
+    margin-top: 0;
+}
+
+.stack__tech {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.stack__item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    background: #FAFAFB;
+    border: 1px solid #EAEBF0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.stack__item:not(:first-child) {
+    margin-left: 32px;
+}
+
+.tech-img {
+    width: 208px;
+    height: 145px;
+}
+
+.tech-img-cs {
+    background: url(../img/tech/c-sharp.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-net {
+    background: url(../img/tech/net.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-html-css {
+    background: url(../img/tech/html-css.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-js {
+    background: url(../img/tech/js.png) no-repeat center center;
+    background-size: contain;
+    mix-blend-mode: darken;
+}
+
+.tech-img-bootstrap {
+    background: url(../img/tech/bootstrap.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-react {
+    background: url(../img/tech/react.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-mysql {
+    background: url(../img/tech/mysql.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-sql-server {
+    background: url(../img/tech/sql-server.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-postgresql {
+    background: url(../img/tech/postgresql.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-mongodb {
+    background: url(../img/tech/mongodb.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-windows {
+    background: url(../img/tech/windows.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-centos {
+    background: url(../img/tech/centos.png) no-repeat center center;
+    background-size: contain;
+}
+
+.tech-img-ubuntu {
+    background: url(../img/tech/ubuntu.png) no-repeat center center;
+    background-size: contain;
+}
+
+@media (max-width: 1200px) {
+    .stack {
+        margin-top: 0;
+    }
+    .stack h2 {
+        margin-bottom: 24px;
+    }
+    .tech-img {
+        width: 128px;
+        height: 91px;
+    }
+    .stack__item {
+        padding: 24px;
+        margin-bottom: 16px;
+    }
+    .stack__content {
+        padding: 48px 48px 30px 48px;
+    }
+    .stack_description {
+        margin-bottom: 40px;
+    }
+    .stack__item:not(:first-child) {
+        margin-left: 28px;
+    }
+    .stack__tech {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .stack h2 {
+        margin-top: 41px;
+    }
+    .stack__title {
+        font-size: 24px;
+    }
+    .stack__tech {
+        margin-top: 30px;
+    }
+    .stack__content {
+        padding: 41px 41px 23px 41px;
+    }
+    .stack__item {
+        width: 50%;
+    }
+    .stack__item:not(:first-child) {
+        margin-left: 0;
     }
 }
 
