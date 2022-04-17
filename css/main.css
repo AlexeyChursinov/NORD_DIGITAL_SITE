@@ -2495,6 +2495,56 @@ textarea {
 
 
 /* ====================================================================================================== 
+--CONTACTS-- 
+====================================================================================================== */
+
+.contacts-map {
+    margin-top: 166px;
+}
+
+.contacts-map__img {
+    position: relative;
+    background: url(../img/y-map.png) no-repeat center center;
+    width: 1312px;
+    height: 603px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.map-marker {
+    position: absolute;
+    background: url(../img/map-marker.png) no-repeat center center;
+    width: 86px;
+    height: 100px;
+    top: 176px;
+    left: 880px;
+}
+
+.contacts-map__info {
+    background: #FFFFFF;
+    border-radius: 12px;
+    text-align: center;
+    padding: 24px;
+}
+
+.contacts-map__info p {
+    font-family: 'Mulish Light';
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+}
+
+.i-info-green {
+    display: inline-block;
+    vertical-align: bottom;
+    background: url(../img/icons/info-green.svg) no-repeat center center;
+    width: 27px;
+    height: 27px;
+    margin-right: 20px;
+}
+
+
+/* ====================================================================================================== 
 --FOOTER-- 
 ====================================================================================================== */
 
