@@ -2359,6 +2359,139 @@ h2 {
 
 
 /* ====================================================================================================== 
+--FEEDBACK-- 
+====================================================================================================== */
+
+.feedback__col-bottom {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.feedback__col-top-fields {
+    flex: 0 0 auto;
+    width: 33.3%;
+}
+
+input {
+    width: 80%;
+}
+
+#file-upload {
+    width: 93.7%;
+}
+
+textarea {
+    width: 93.7%;
+    min-height: 113px;
+    resize: vertical;
+}
+
+.feedback__col-text {
+    flex: 0 0 auto;
+    width: 26%;
+}
+
+.feedback__col-form {
+    flex: 0 0 auto;
+    width: 74%;
+}
+
+.feedback-mt {
+    margin-top: 185px;
+}
+
+.feedback__title {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    line-height: 125%;
+    margin-bottom: 23px;
+}
+
+.feedback__text {
+    font-family: 'Mulish Light';
+    font-size: 18px;
+    line-height: 175%;
+}
+
+.feedback__form {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.agreement-text {
+    font-family: 'Mulish';
+    font-size: 12px;
+    line-height: 135%;
+}
+
+@media (max-width: 1399px) {
+    .feedback__col-text {
+        width: 100%;
+    }
+    .feedback__col-form {
+        width: 100%;
+    }
+    .feedback__form {
+        margin-left: 0;
+    }
+    #file-upload,
+    textarea {
+        width: 93%;
+    }
+    input {
+        width: 78%;
+    }
+    .submit-btn {
+        margin-right: 38px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .submit-btn {
+        margin-right: 20px;
+    }
+    .feedback-mt {
+        margin-top: 112px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .submit-btn {
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 767px) {
+    .feedback__col-bottom {
+        width: 100%;
+    }
+    .submit-btn {
+        margin-right: 0;
+        width: 100%;
+    }
+    #file-upload,
+    textarea,
+    input {
+        width: 90%;
+    }
+    .feedback__col-top-fields {
+        width: 100%;
+    }
+    .feedback-mt {
+        margin-top: 96px;
+    }
+}
+
+@media (max-width: 479px) {
+    #file-upload,
+    textarea,
+    input {
+        width: 87%;
+    }
+}
+
+
+/* ====================================================================================================== 
 --FOOTER-- 
 ====================================================================================================== */
 

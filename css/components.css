@@ -267,6 +267,11 @@
       margin-top: 70px;
   }
   
+  .submit-btn {
+      float: right;
+      margin-right: 14px;
+  }
+  
   .i-info {
       display: inline-block;
       width: 32px;
@@ -289,8 +294,168 @@
       background-color: #FFFFFF;
   }
   
+  .i-msg {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      margin-left: 15px;
+      -webkit-mask-image: url(../img/icons/msg.svg);
+      mask-image: url(../img/icons/msg.svg);
+      background-color: #FFFFFF;
+  }
+  
+  .i-attach {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      margin-left: 15px;
+      -webkit-mask-image: url(../img/icons/attach.svg);
+      mask-image: url(../img/icons/attach.svg);
+      background-color: #FFFFFF;
+  }
+  
   .i-up-right-blue {
       background-color: #2F80ED;
+  }
+  /* --FORM-- */
+  
+  input,
+  textarea {
+      font-family: 'Mulish';
+      font-size: 18px;
+      line-height: 135%;
+      color: #0C131D;
+      border-radius: 8px;
+      border: 1px solid #FFFFFF;
+      background: #FFFFFF;
+      padding: 28px 20px 12px 20px;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+  
+  textarea:hover,
+  textarea:focus,
+  input:hover,
+  input:focus {
+      border-color: #2F80ED;
+  }
+  
+  textarea:focus-visible,
+   :focus-visible {
+      outline: #2F80ED;
+  }
+  /* =========== */
+  
+  .form-floating {
+      position: relative;
+      margin-bottom: 14px;
+  }
+  
+  .form-floating>label {
+      font-family: 'Mulish';
+      font-size: 18px;
+      line-height: 135%;
+      position: absolute;
+      top: 4px;
+      left: 20px;
+      height: 100%;
+      padding: 1rem 0.75rem;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+      .form-floating>label {
+          transition: none;
+      }
+  }
+  
+  .form-floating>.form-control::-moz-placeholder {
+      color: transparent;
+  }
+  
+  .form-floating>.form-control::placeholder {
+      color: transparent;
+  }
+  
+  .form-floating>.form-control:not(:-moz-placeholder-shown)~label {
+      opacity: 0.65;
+      transform: scale(0.8) translateY(-0.8rem) translateX(0.15rem);
+  }
+  
+  .form-floating>.form-control:focus~label,
+  .form-floating>.form-control:not(:placeholder-shown)~label,
+  .form-floating>.form-select~label {
+      opacity: 0.65;
+      transform: scale(0.8) translateY(-0.8rem) translateX(0.15rem);
+  }
+  
+  .form-floating>.form-control:-webkit-autofill~label {
+      opacity: 0.65;
+      transform: scale(0.8) translateY(-0.8rem) translateX(0.15rem);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+      .form-control {
+          transition: none;
+      }
+  }
+  
+  .form-control[type=file] {
+      overflow: hidden;
+  }
+  /* .form-control[type=file]::before {
+      content: 'Прикрепить файл ';
+  } */
+  
+  .form-control[type=file]:not(:disabled):not([readonly]) {
+      cursor: pointer;
+  }
+  
+  .form-control::-moz-placeholder {
+      color: #6c757d;
+      opacity: 1;
+  }
+  
+  .form-control::placeholder {
+      color: #6c757d;
+      opacity: 1;
+  }
+  
+  .form-control[type=file]:not(:disabled):not([readonly]) {
+      cursor: pointer;
+      margin-bottom: 14px;
+      padding: 18px 20px 16px 20px;
+  }
+  
+  .form-control::-webkit-file-upload-button {
+      padding: 3rem 0 1.375rem 0;
+      margin: -1.375rem -1.75rem;
+      -webkit-margin-end: 1.75rem;
+      margin-inline-end: 0.5rem;
+      float: right;
+      color: transparent;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      background: url(../img/icons/attach.svg) no-repeat center center;
+      pointer-events: none;
+      border: none;
+      -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+      .form-control::-webkit-file-upload-button {
+          -webkit-transition: none;
+          transition: none;
+      }
+      .form-control::file-selector-button {
+          transition: none;
+      }
   }
   /* --SWIPER-- */
   
