@@ -2451,13 +2451,16 @@ textarea {
         margin-right: 20px;
     }
     .feedback-mt {
-        margin-top: 112px;
+        margin-top: 80px;
     }
 }
 
 @media (max-width: 1023px) {
     .submit-btn {
         margin-right: 6px;
+    }
+    .feedback-mt {
+        margin-top: 74px;
     }
 }
 
@@ -2478,7 +2481,7 @@ textarea {
         width: 100%;
     }
     .feedback-mt {
-        margin-top: 96px;
+        margin-top: 58px;
     }
 }
 
