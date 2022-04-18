@@ -2427,6 +2427,7 @@ textarea {
 @media (max-width: 1399px) {
     .feedback__col-text {
         width: 100%;
+        margin-bottom: 0;
     }
     .feedback__col-form {
         width: 100%;
@@ -2462,9 +2463,15 @@ textarea {
     .feedback-mt {
         margin-top: 74px;
     }
+    .feedback-mt-contacts {
+        margin-top: 141px;
+    }
 }
 
 @media (max-width: 767px) {
+    .feedback__col-text {
+        margin-bottom: -14px;
+    }
     .feedback__col-bottom {
         width: 100%;
     }
@@ -2483,6 +2490,9 @@ textarea {
     .feedback-mt {
         margin-top: 58px;
     }
+    .feedback-mt-contacts {
+        margin-top: 154px;
+    }
 }
 
 @media (max-width: 479px) {
@@ -2490,6 +2500,12 @@ textarea {
     textarea,
     input {
         width: 87%;
+    }
+    .feedback-mt-contacts {
+        margin-top: 241px;
+    }
+    .feedback__title {
+        font-size: 28px;
     }
 }
 
@@ -2673,6 +2689,11 @@ textarea {
     .contacts-map__contacts-info {
         max-width: 100%;
     }
+    .contacts-map__info {
+        width: 624px;
+        position: absolute;
+        top: 884px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2681,6 +2702,91 @@ textarea {
         margin-right: 0;
         max-width: 768px;
         padding: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .contacts-map-container {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts-map__img {
+        background: url(../img/y-map-4.png) no-repeat center center;
+        width: 480px;
+        height: 728px;
+    }
+    .map-marker {
+        top: 424px;
+        left: 203px;
+    }
+    .contacts-map {
+        margin-top: 338px;
+    }
+    .contacts-map__contacts {
+        top: -247px;
+        left: 14px;
+        width: 455px;
+    }
+    .i-info-green {
+        width: 65px;
+    }
+    .contacts-map__contacts-content h2 {
+        margin-bottom: 64px;
+    }
+    .contacts-map__contacts-info {
+        max-width: 100%;
+    }
+    .contacts-map__contacts-content {
+        padding: 71px 120px 40px 74px;
+    }
+    .contacts-map__info {
+        width: 384px;
+        position: absolute;
+        top: 1027px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+    .contacts-map-container {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 479px) {
+    .contacts-map__img {
+        background: url(../img/y-map-5.png) no-repeat center center;
+        width: 360px;
+        height: 567px;
+    }
+    .map-marker {
+        top: 342px;
+        left: 150px;
+    }
+    .contacts-map__contacts {
+        top: -247px;
+        left: 14px;
+        width: 335px;
+    }
+    .contacts-map__contacts-content {
+        padding: 40px 25px 7px 35px;
+    }
+    .contacts-map__info {
+        width: 280px;
+        position: absolute;
+        top: 868px;
+    }
+    .i-info-green {
+        width: 85px;
+    }
+    .contacts-map__contacts-content h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
     }
 }
 
@@ -2753,6 +2859,16 @@ textarea {
     margin-top: -53px;
 }
 
+.footer-mt-contact {
+    margin-top: 217px;
+}
+
+@media (max-width: 1399px) {
+    .col-footer-2 {
+        width: 22%;
+    }
+}
+
 @media (max-width: 1200px) {
     .footer .row {
         justify-content: center;
@@ -2788,18 +2904,12 @@ textarea {
         margin-top: 112px;
         padding-bottom: 35px;
     }
-}
-
-@media (max-width: 1399px) {
-    .col-footer-2 {
-        width: 22%;
-    }
-}
-
-@media (max-width: 1200px) {
     .footer-mt-home {
         margin-top: 110px;
         padding-bottom: 35px;
+    }
+    .footer-mt-contact {
+        margin-top: 113px;
     }
 }
 
@@ -2809,6 +2919,10 @@ textarea {
     }
     .navbar-footer {
         padding: 0;
+    }
+    .footer-mt-contact {
+        margin-top: 101px;
+        padding-bottom: 35px;
     }
 }
 
@@ -2837,6 +2951,9 @@ textarea {
     }
     .footer-mt-comp {
         margin-top: 124px;
+    }
+    .footer-mt-contact {
+        margin-top: 97px;
     }
 }
 
