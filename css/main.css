@@ -2399,12 +2399,12 @@ textarea {
 
 .feedback__col-text {
     flex: 0 0 auto;
-    width: 26%;
+    width: 27%;
 }
 
 .feedback__col-form {
     flex: 0 0 auto;
-    width: 74%;
+    width: 73%;
 }
 
 .feedback-mt {
@@ -2412,7 +2412,7 @@ textarea {
 }
 
 .feedback-mt-career {
-    margin-top: 570px;
+    margin-top: 605px;
 }
 
 .feedback__title {
@@ -2827,6 +2827,10 @@ textarea {
     left: -122px;
 }
 
+.career-banner-bottom {
+    margin-top: 220px;
+}
+
 
 /* ====================================================================================================== 
 --WHY ND-- 
@@ -2912,17 +2916,37 @@ textarea {
 }
 
 .nd-value__banner {
-    background: url(../img/value-banner.png) no-repeat center center;
+    background: url(../img/value-banner-text.png) no-repeat center center;
     width: 1792px;
     height: 476px;
     margin: 0 auto;
 }
 
+.i-point {
+    background: url(../img/icons/point.svg) no-repeat center center;
+    width: 57px;
+    height: 47px;
+    margin-right: 32px;
+}
+
 .nd-value__tiles {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 64px;
+    padding: 88px 88px 42px 88px;
     margin-top: -86px;
+}
+
+.nd-value__tiles-text {
+    display: flex;
+}
+
+.nd-value__tiles-text p {
+    font-family: 'Mulish';
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 0;
+    margin-bottom: 47px;
+    padding-right: 60px;
 }
 
 
