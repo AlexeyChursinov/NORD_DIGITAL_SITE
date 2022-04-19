@@ -683,6 +683,17 @@ h2 {
     flex: 0 0 57%;
 }
 
+.nd-logo {
+    background: url(../img/nd-logo.png) no-repeat center center;
+    width: 416px;
+    height: 416px;
+}
+
+.about__content_career {
+    margin-top: 44px;
+    padding-right: 26px;
+}
+
 @media (max-width: 1400px) {
     .about__content_home {
         margin-top: 55px;
@@ -2400,6 +2411,10 @@ textarea {
     margin-top: 185px;
 }
 
+.feedback-mt-career {
+    margin-top: 570px;
+}
+
 .feedback__title {
     font-family: 'Montserrat Alternates SemiBold';
     font-size: 32px;
@@ -2788,6 +2803,126 @@ textarea {
         font-size: 28px;
         margin-bottom: 40px;
     }
+}
+
+
+/* ====================================================================================================== 
+--CAREER-- 
+====================================================================================================== */
+
+.banner__col-text-career {
+    padding-right: 30px;
+}
+
+.banner__text-career {
+    padding-top: 146px;
+    padding-bottom: 180px;
+}
+
+.career-img-banner-top {
+    width: 722px;
+    height: 722px;
+    position: absolute;
+    top: -50px;
+    left: -122px;
+}
+
+
+/* ====================================================================================================== 
+--WHY ND-- 
+====================================================================================================== */
+
+.why-nd-mt {
+    margin-top: 215px;
+}
+
+.why-nd__col-text {
+    flex: 0 0 auto;
+    width: 40%;
+}
+
+.why-nd__col-tiles {
+    flex: 0 0 auto;
+    width: 58%;
+    margin-left: 20px;
+}
+
+.why-nd__title {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 40px;
+    line-height: 125%;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.why-nd__text {
+    font-family: 'Mulish Light';
+    font-size: 20px;
+    line-height: 175%;
+    padding-right: 90px;
+}
+
+.why-nd__tiles {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px 40px 22px 40px;
+    margin-bottom: 24px;
+}
+
+.career-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.why-nd__title-tiles {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 20px;
+    line-height: 125%;
+}
+
+.why-nd__text-tiles {
+    font-family: 'Mulish Light';
+    font-size: 18px;
+    line-height: 150%;
+    padding-right: 10px;
+}
+
+.i-rocket {
+    background: url(../img/icons/rocket.svg);
+}
+
+.i-tasks {
+    background: url(../img/icons/tasks.svg);
+}
+
+.i-files {
+    background: url(../img/icons/files.svg);
+}
+
+.i-circles {
+    background: url(../img/icons/circles.svg);
+}
+
+.i-team {
+    background: url(../img/icons/team.svg);
+}
+
+.nd-value {
+    margin-top: 192px;
+}
+
+.nd-value__banner {
+    background: url(../img/value-banner.png) no-repeat center center;
+    width: 1792px;
+    height: 476px;
+    margin: 0 auto;
+}
+
+.nd-value__tiles {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 64px;
+    margin-top: -86px;
 }
 
 
