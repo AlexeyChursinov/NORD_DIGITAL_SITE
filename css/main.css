@@ -587,6 +587,14 @@ h2 {
     .banner__tiles-rings-serv {
         height: 460px!important;
     }
+    .career-btn {
+        margin-top: 45px;
+        margin-left: 15px;
+        padding: 12px 10px 12px 14px;
+    }
+    .banner__tiles-rings-career {
+        height: 457px!important;
+    }
 }
 
 
@@ -830,6 +838,9 @@ h2 {
     }
     .about-mt-comp {
         margin-top: 113px;
+    }
+    .about-career p {
+        padding: 0 10px;
     }
 }
 
@@ -1435,6 +1446,9 @@ h2 {
     }
     .emp-text-description {
         font-size: 16px;
+    }
+    .employees-career {
+        margin-top: 84px;
     }
 }
 
@@ -2583,6 +2597,9 @@ textarea {
     .feedback-mt-contacts {
         margin-top: 154px;
     }
+    .feedback-mt-career {
+        margin-top: 636px;
+    }
 }
 
 @media (max-width: 479px) {
@@ -2596,6 +2613,9 @@ textarea {
     }
     .feedback__title {
         font-size: 28px;
+    }
+    .feedback-mt-career {
+        margin-top: 645px;
     }
 }
 
@@ -2916,6 +2936,10 @@ textarea {
 --WHY ND-- 
 ====================================================================================================== */
 
+.why-nd-main {
+    display: block;
+}
+
 .why-nd-mt {
     margin-top: 215px;
 }
@@ -2998,6 +3022,7 @@ textarea {
 
 .nd-value__banner {
     background: url(../img/value-banner-text.png) no-repeat center center;
+    background-size: contain;
     width: 1792px;
     height: 476px;
     margin: 0 auto;
@@ -3033,6 +3058,30 @@ textarea {
 #whyND {
     position: sticky;
     top: 115px;
+}
+
+@media (max-width: 1800px) {
+    .nd-value__banner {
+        width: 1550px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .nd-value__banner {
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .nd-value__banner {
+        width: 1360px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .nd-value__banner {
+        width: 1200px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -3171,12 +3220,84 @@ textarea {
         font-size: 32px;
         margin-bottom: 24px;
     }
+    .why-nd__tiles {
+        text-align: start;
+    }
     .why-nd__text {
         font-size: 18px;
         margin-bottom: 30px;
     }
     .why-nd-mt {
         margin-top: 93px;
+    }
+    .why-nd-main {
+        display: none;
+    }
+    .nd-value {
+        margin-top: 54px;
+    }
+    .nd-value__tiles {
+        padding: 47px 26px 9px 26px;
+        margin-top: -223px;
+    }
+    .nd-value__tiles-text p {
+        font-size: 18px;
+        padding-right: 0;
+    }
+    .career-banner-bottom {
+        margin-top: 96px;
+    }
+}
+
+@media (max-width: 479px) {
+    .nd-value__banner {
+        background: url(../img/value-banner-text-360.png) no-repeat center center;
+        width: 344px;
+        height: 436px;
+        margin: 0 auto;
+    }
+    .career-img-banner-top {
+        left: 14px;
+    }
+    .banner__text-career {
+        padding-top: 66px;
+        padding-bottom: 34px;
+    }
+    .banner__tiles-career {
+        height: 476px!important;
+    }
+    .why-nd__title {
+        font-size: 28px;
+        margin-bottom: 26px;
+    }
+    .why-nd-mt {
+        margin-top: 90px;
+    }
+    .why-nd__text {
+        font-size: 16px;
+    }
+    .why-nd__tiles {
+        padding: 27px 16px 22px 16px;
+    }
+    .why-nd__text-tiles {
+        font-size: 16px;
+    }
+    .nd-value {
+        margin-top: 60px;
+    }
+    .nd-value__tiles {
+        padding: 41px 26px 9px 26px;
+        margin-top: -194px;
+    }
+    .nd-value__tiles-text p {
+        font-size: 16px;
+        padding-right: 0;
+    }
+    .career-banner-bottom {
+        margin-top: 136px;
+    }
+    .career-banner-bottom .banner__col-text-career {
+        margin-top: 8px;
     }
 }
 

@@ -543,6 +543,11 @@
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
       margin-top: 10px;
   }
+  /* swiper why */
+  
+  .why-swiper .swiper {
+      height: 455px;
+  }
   /* swiper company */
   
   .swiper-scroll {
@@ -709,6 +714,12 @@
       border-radius: 0;
   }
   
+  .why-nd .swiper-pagination-bullet {
+      width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 17%));
+      height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 4px));
+      border-radius: 0;
+  }
+  
   .activity .swiper-pagination-bullet {
       width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10%));
   }
@@ -849,6 +860,10 @@
       .activity .swiper-pagination-bullet,
       .employees .swiper-pagination-bullet {
           width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20%));
+          border-radius: 0;
+      }
+      .why-nd .swiper-pagination-bullet {
+          width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 17%));
           border-radius: 0;
       }
       .activity .swiper-pagination-bullet {
