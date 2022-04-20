@@ -263,7 +263,8 @@
       background: rgba(47, 128, 237, 0.1);
   }
   
-  .consult-btn {
+  .consult-btn,
+  .career-btn {
       margin-top: 70px;
   }
   

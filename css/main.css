@@ -235,12 +235,14 @@ h2 {
 }
 
 .banner__col-text,
-.banner__col-text-serv {
+.banner__col-text-serv,
+.banner__col-text-career {
     flex: 0 0 auto;
     width: 60%;
 }
 
-.banner__col-img {
+.banner__col-img,
+.banner__col-img-career {
     flex: 0 0 auto;
     width: 40%;
 }
@@ -251,6 +253,14 @@ h2 {
 
 .rings-top {
     display: none;
+}
+
+.banner__tiles-career .banner__col-text-career {
+    order: 1;
+}
+
+.banner__col-img-career {
+    order: 2;
 }
 
 @media (min-width: 1601px) {
@@ -346,11 +356,18 @@ h2 {
         flex: 0 0 auto;
         width: 50%;
     }
+    .banner__col-text-career {
+        flex: 0 0 auto;
+        width: 56%;
+    }
     .rings {
         width: 398px;
         height: 464px;
         top: 0;
         left: 116px;
+    }
+    .rings-career {
+        left: 60px;
     }
     .banner__text-comp {
         padding-top: 104px;
@@ -422,7 +439,8 @@ h2 {
     .banner__text-services {
         padding-top: 22px;
     }
-    .consult-btn {
+    .consult-btn,
+    .career-btn {
         margin-top: 46px;
     }
 }
@@ -499,6 +517,27 @@ h2 {
     }
     .consult-btn {
         margin-left: 88px;
+    }
+    .banner__tiles-career .banner__col-text-career {
+        flex: 0 0 auto;
+        width: 100%;
+        order: 2;
+        margin-top: 215px;
+    }
+    .career-banner-bottom .banner__col-text-career {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-top: 44px;
+    }
+    .banner__col-img-career {
+        order: 1;
+    }
+    .banner__tiles-career {
+        height: 513px!important;
+    }
+    .career-btn {
+        margin-top: 60px;
+        margin-left: 54px;
     }
 }
 
@@ -644,7 +683,8 @@ h2 {
 ====================================================================================================== */
 
 .about-mt-home,
-.about-mt-comp {
+.about-mt-comp,
+.about-career {
     margin-top: 216px;
 }
 
@@ -671,7 +711,9 @@ h2 {
     display: block;
 }
 
-.about__col {
+.about__col,
+.about__col-career-img,
+.about__col-career-text {
     flex: 0 0 50%;
 }
 
@@ -685,6 +727,7 @@ h2 {
 
 .nd-logo {
     background: url(../img/nd-logo.png) no-repeat center center;
+    background-size: contain;
     width: 416px;
     height: 416px;
 }
@@ -708,7 +751,8 @@ h2 {
         flex: 0 0 100%;
     }
     .about-mt-home,
-    .about-mt-comp {
+    .about-mt-comp,
+    .about-career {
         margin-top: 112px;
     }
     .about__content_home {
@@ -722,6 +766,21 @@ h2 {
     }
     .about__col-content {
         flex: 0 0 100%;
+    }
+    .nd-logo {
+        width: 200px;
+        height: 200px;
+    }
+    .about__col-career-img {
+        flex: 0 0 28%;
+    }
+    .about__col-career-text {
+        flex: 0 0 68%;
+    }
+    .about__content_career {
+        margin-top: 0px;
+        padding-right: 26px;
+        margin-left: 14px;
     }
 }
 
@@ -749,6 +808,13 @@ h2 {
     }
     .about-mt-comp {
         margin-top: 103px;
+    }
+    .nd-logo {
+        width: 136px;
+        height: 136px;
+    }
+    .about-career {
+        margin-top: 96px;
     }
 }
 
@@ -1335,6 +1401,9 @@ h2 {
     .tiles-emps {
         width: 531px;
         padding: 92px 32px 40px 32px;
+    }
+    .employees-career {
+        margin-top: 150px;
     }
 }
 
@@ -2469,6 +2538,9 @@ textarea {
     .feedback-mt {
         margin-top: 80px;
     }
+    .feedback-mt-career {
+        margin-top: 541px;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -2480,6 +2552,9 @@ textarea {
     }
     .feedback-mt-contacts {
         margin-top: 141px;
+    }
+    .feedback-mt-career {
+        margin-top: 570px;
     }
 }
 
@@ -2819,6 +2894,11 @@ textarea {
     padding-bottom: 180px;
 }
 
+.banner__text-career-bottom {
+    padding-top: 84px;
+    padding-bottom: 110px;
+}
+
 .career-img-banner-top {
     width: 722px;
     height: 722px;
@@ -2843,6 +2923,7 @@ textarea {
 .why-nd__col-text {
     flex: 0 0 auto;
     width: 40%;
+    position: relative;
 }
 
 .why-nd__col-tiles {
@@ -2947,6 +3028,156 @@ textarea {
     margin-top: 0;
     margin-bottom: 47px;
     padding-right: 60px;
+}
+
+#whyND {
+    position: sticky;
+    top: 115px;
+}
+
+@media (max-width: 1200px) {
+    .nd-value__banner {
+        background: url(../img/value-banner-text-2.png) no-repeat center center;
+        width: 992px;
+        height: 392px;
+        margin: 0 auto;
+    }
+    .career-img-banner-top {
+        width: 528px;
+        height: 528px;
+        top: -32px;
+        left: -71px;
+    }
+    .banner__text-career {
+        padding-top: 103px;
+        padding-bottom: 136px;
+    }
+    .banner__text-career-bottom {
+        padding-top: 42px;
+        padding-bottom: 68px;
+    }
+    .why-nd-mt {
+        margin-top: 107px;
+    }
+    .why-nd__col-text {
+        width: 90%;
+    }
+    #whyND {
+        position: relative;
+        top: 0;
+    }
+    .why-nd__col-tiles {
+        width: 98%;
+    }
+    .why-nd__tiles {
+        padding: 43px 40px 22px 20px;
+    }
+    .nd-value {
+        margin-top: 84px;
+    }
+    .nd-value__tiles {
+        padding: 57px 70px 9px 65px;
+        margin-top: -98px;
+    }
+    .i-point {
+        width: 87px;
+        height: 47px;
+        margin-right: 32px;
+    }
+    .career-banner-bottom {
+        margin-top: 108px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .nd-value__banner {
+        background: url(../img/value-banner-text-3.png) no-repeat center center;
+        width: 736px;
+        height: 568px;
+        margin: 0 auto;
+    }
+    .career-img-banner-top {
+        width: 368px;
+        height: 368px;
+        top: -16px;
+        left: -54px;
+    }
+    .banner__text-career {
+        padding-top: 55px;
+        padding-bottom: 72px;
+    }
+    .about-career h2 {
+        margin-top: 40px;
+    }
+    .about__col-career-text {
+        flex: 0 0 100%;
+    }
+    .about__content_career {
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .about-career .row {
+        justify-content: center;
+    }
+    .why-nd__col-text {
+        width: 100%;
+    }
+    .why-nd__text {
+        padding-right: 0;
+        margin-bottom: 21px;
+    }
+    .why-nd__col-tiles {
+        margin-left: 0;
+    }
+    .why-nd__tiles {
+        padding: 43px 20px 22px 40px;
+    }
+    .nd-value__tiles {
+        padding: 57px 26px 9px 26px;
+        margin-top: -174px;
+    }
+    .career-banner-bottom {
+        margin-top: 93px;
+    }
+    .banner__col-text-career {
+        flex: 0 0 auto;
+        width: 60%;
+    }
+    .banner__text-career-bottom {
+        padding-top: 5px;
+        padding-bottom: 31px;
+    }
+    .rings-career {
+        left: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nd-value__banner {
+        background: url(../img/value-banner-text-480.png) no-repeat center center;
+        width: 448px;
+        height: 568px;
+        margin: 0 auto;
+    }
+    .career-img-banner-top {
+        width: 305px;
+        height: 305px;
+        top: 0px;
+        left: 64px;
+    }
+    .why-nd__title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .why-nd__text {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .why-nd-mt {
+        margin-top: 93px;
+    }
 }
 
 
