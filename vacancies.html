@@ -14,14 +14,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/vendor/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- JS -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/vacancies.js"></script>
+    <script src="js/swipers.js"></script>
 
 </head>
 
@@ -67,7 +70,63 @@
             <div class="container">
                 <h2>Вакансии</h2>
                 <p class="vacancies__description">Количество интересных проектов, которые мы ведём, становится всё больше, а потому и наша команда продолжает расти. Если ты хочешь стать одним из её участников, ознакомься с нашими вакансиями.</p>
+            </div>
+            <div class="swiper-scroll swiper-scroll-vacancies">
+                <div class="swiper swiperScroll">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="vacancies__side-item">
+                                    <p class="vacancies__side-item-name">Все вакансии</p>
+                                    <p class="vacancies__side-item-value">8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="vacancies__side-item">
+                                    <p class="vacancies__side-item-name">Тестирование</p>
+                                    <p class="vacancies__side-item-value">2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="vacancies__side-item">
+                                    <p class="vacancies__side-item-name">Разработка</p>
+                                    <p class="vacancies__side-item-value">2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="vacancies__side-item">
+                                    <p class="vacancies__side-item-name">Проектный офис</p>
+                                    <p class="vacancies__side-item-value">1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="vacancies__side-item">
+                                    <p class="vacancies__side-item-name">Аналитика</p>
+                                    <p class="vacancies__side-item-value">1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="vacancies__side-item">
+                                    <p class="vacancies__side-item-name">Другие специалисты</p>
+                                    <p class="vacancies__side-item-value">2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container">
                 <div class="row">
                     <div class="vacancies__col-sidebar">
                         <div class="vacancies__side-tiles">
@@ -103,6 +162,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="vacancies__col-vac-list">
                         <a href="" class="vacancies__tiles" id="dev_senior">
                             <div class="vacancies__item">
@@ -158,7 +218,7 @@
         </section>
 
         <!-- --FEEDBACK SECTION-- -->
-        <section class="feedback feedback-mt feedback-mt-contacts">
+        <section class="feedback feedback-mt feedback-mt-vacancies">
             <div class="container">
                 <div class="row">
                     <div class="feedback__col-text">
@@ -214,13 +274,11 @@
                         <p class="career-text">
                             Наши сотрудники — наша главная ценность, и мы стремимся привлечь и удержать в своей команде лучших
                         </p>
-                        <a href="career.html" type="button" class="btn btn-primary">Карьера в Nord Didgital<span class="i-up-right"></span></a>
+                        <a href="career.html" type="button" class="btn btn-primary btn-vacancies">Карьера в Nord Didgital<span class="i-up-right"></span></a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-
     </main>
 
     <!-- FOOTER -->

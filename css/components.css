@@ -548,6 +548,11 @@
   .why-swiper .swiper {
       height: 455px;
   }
+  /* swiper vacancies */
+  
+  .swiper-scroll-vacancies {
+      display: none;
+  }
   /* swiper company */
   
   .swiper-scroll {
@@ -562,6 +567,11 @@
       left: 0;
       padding-top: 14px;
       padding-bottom: 0!important;
+  }
+  
+  .swiper-scroll-vacancies .swiper {
+      position: relative;
+      height: 80px;
   }
   
   .swiper-scroll .swiper-slide {
@@ -777,6 +787,9 @@
           left: 46px;
           top: 82px;
       }
+      .swiper-scroll-vacancies {
+          display: block;
+      }
   }
   
   @media (max-width: 1023px) {
@@ -807,6 +820,9 @@
       }
       .swiper-scroll .swiper {
           top: 40px;
+      }
+      .swiper-scroll-vacancies .swiper {
+          top: 0px;
       }
   }
   

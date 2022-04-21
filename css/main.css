@@ -2185,6 +2185,9 @@ h2 {
     .swiper-scroll .swiper {
         top: -6px;
     }
+    .swiper-scroll-vacancies .swiper {
+        top: 5px;
+    }
     .tiles-features {
         width: 230px;
         height: 200px;
@@ -2573,6 +2576,9 @@ textarea {
     }
     .feedback-mt-career {
         margin-top: 570px;
+    }
+    .feedback-mt-vacancies {
+        margin-top: 65px;
     }
 }
 
@@ -3330,6 +3336,7 @@ textarea {
 }
 
 .vacancies__col-sidebar {
+    display: block;
     flex: 0 0 auto;
     width: 35%;
 }
@@ -3387,6 +3394,16 @@ textarea {
     color: #C5C8CD;
 }
 
+.swiper-scroll-vacancies .vacancies__side-item-value {
+    margin-left: 35px;
+}
+
+.swiper-scroll-vacancies .vacancies__side-item {
+    background: #FFFFFF;
+    margin-right: 20px;
+    border-radius: 16px;
+}
+
 .vacancies__tiles {
     background: #FFFFFF;
     border-radius: 8px;
@@ -3405,7 +3422,7 @@ textarea {
 .vacancies__item {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     padding: 16px 12px 16px 12px;
     border-radius: 8px;
 }
@@ -3419,6 +3436,47 @@ textarea {
     -webkit-mask-image: url(../img/icons/up-right.svg);
     mask-image: url(../img/icons/up-right.svg);
     background: #D0DBEC;
+    transition: all 0.2s ease-in-out;
+}
+
+.vacancies__tiles:hover .vac-i-up-right {
+    background: #2F80ED;
+}
+
+@media (max-width: 1200px) {
+    .vacancies__col-sidebar {
+        display: none;
+    }
+    .vacancies__col-vac-list {
+        width: 100%;
+    }
+    .vacancies__description {
+        width: 71%;
+    }
+    .vacancies {
+        margin-top: 112px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .vacancies__description {
+        width: 98%;
+    }
+}
+
+@media (max-width: 767px) {
+    .vacancies__side-item-name {
+        font-size: 18px;
+    }
+    .vacancies__tiles {
+        padding: 12px 5px 12px 5px;
+    }
+}
+
+@media (max-width: 479px) {
+    .btn-vacancies {
+        padding: 12px 6px 12px 13px;
+    }
 }
 
 
