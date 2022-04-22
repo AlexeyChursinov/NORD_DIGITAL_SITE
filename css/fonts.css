@@ -15,6 +15,13 @@
  }
  
  @font-face {
+     font-family: 'Montserrat Alternates Medium';
+     src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf');
+     font-weight: 500;
+     font-style: normal;
+ }
+ 
+ @font-face {
      font-family: 'Montserrat Alternates SemiBold';
      src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
      font-weight: 600;

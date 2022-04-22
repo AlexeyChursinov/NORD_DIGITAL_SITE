@@ -3080,17 +3080,42 @@ textarea {
     .nd-value__banner {
         width: 1400px;
     }
+    .career-img-banner-top {
+        left: -160px;
+    }
 }
 
 @media (max-width: 1440px) {
     .nd-value__banner {
         width: 1360px;
     }
+    .banner__text-career {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .career-img-banner-top {
+        left: -200px;
+    }
 }
 
 @media (max-width: 1360px) {
     .nd-value__banner {
         width: 1200px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .career-img-banner-top {
+        width: 680px;
+        height: 680px;
+        position: absolute;
+        top: -50px;
+        left: -210px;
+    }
+    .banner__text-career {
+        padding-right: 0;
     }
 }
 
@@ -3476,6 +3501,181 @@ textarea {
 @media (max-width: 479px) {
     .btn-vacancies {
         padding: 12px 6px 12px 13px;
+    }
+}
+
+
+/* ====================================================================================================== 
+--VACANCY-- 
+====================================================================================================== */
+
+.vacancy {
+    margin-top: 162px;
+}
+
+.vacancy__col-vacancy {
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.vacancy__col-description {
+    flex: 0 0 auto;
+    width: 70%;
+}
+
+.vacancy__tiles-min {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 48px;
+}
+
+.vacancy__tiles-main {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 56px;
+}
+
+.vacancy__title-min {
+    margin-top: 0;
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.vacancy__text {
+    font-family: 'Mulish Light';
+    font-size: 18px;
+    line-height: 175%;
+}
+
+.vacancy__title-main {
+    margin-top: 0;
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 24px;
+    line-height: 125%;
+    margin-bottom: 35px;
+}
+
+.vacancy__text-ul {
+    margin-bottom: 56px;
+    padding-left: 20px;
+}
+
+.vacancy__text-ul li {
+    margin-bottom: 20px;
+}
+
+.vacansy__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 24px;
+}
+
+.vacansy__button {
+    flex: 0 0 30%;
+    background: rgba(47, 128, 237, 0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.vacancy-icon {
+    width: 32px;
+    height: 32px;
+    padding: 12px 24px 12px 24px;
+}
+
+.i-print {
+    background: url(../img/icons/print.svg) no-repeat center center;
+}
+
+.i-v-letter {
+    background: url(../img/icons/letter-2.svg) no-repeat center center;
+}
+
+.i-share {
+    background: url(../img/icons/share.svg) no-repeat center center;
+}
+
+.vacancy__link-mb {
+    margin-bottom: 32px;
+}
+
+.vacancy__link {
+    font-family: 'Montserrat Alternates Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-decoration: none;
+    color: #90A4AF;
+}
+
+.vacancy__top {
+    display: none;
+}
+
+.vacancy__top-bottom {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 48px 48px 34px 48px;
+    margin-bottom: 24px;
+}
+
+.vacancy__bottom {
+    display: none;
+    margin-top: 24px;
+}
+
+.vacancy-stiky {
+    position: sticky;
+    top: 115px;
+}
+
+@media (max-width: 1399px) {
+    .vacancy__tiles-min {
+        padding: 48px 30px 48px 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .vacancy__col-vacancy {
+        display: none;
+    }
+    .vacancy__col-description {
+        width: 100%;
+    }
+    .vacancy__top {
+        display: block;
+    }
+    .vacancy__bottom {
+        display: block;
+    }
+    .vacansy__buttons {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .vacancy__tiles-main {
+        padding: 32px;
+    }
+    .vacancy__title-min {
+        font-size: 28px;
+    }
+    .vacancy__top-bottom {
+        padding: 32px 32px 18px 32px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 479px) {
+    .vacancy__title-min {
+        font-size: 24px;
+    }
+    .vacancy__text {
+        font-size: 16px;
     }
 }
 

@@ -171,10 +171,4 @@ $(function() {
         pm.classList.add('hidden');
     }
 
-    // ===============
-
-    $(".vacancies__tiles").hover(function() {
-
-    });
-
 });
