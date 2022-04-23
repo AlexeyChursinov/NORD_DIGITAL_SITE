@@ -1213,6 +1213,20 @@ h2 {
     margin-top: 219px;
 }
 
+.projects__link {
+    display: block;
+    overflow: hidden;
+}
+
+.hover-image-scale {
+    transition: 1s;
+    display: block;
+}
+
+.hover-image-scale:hover {
+    transform: scale(1.1);
+}
+
 .projects-mt-pr {
     margin-top: 163px;
 }
@@ -3598,11 +3612,11 @@ textarea {
     background: url(../img/icons/share.svg) no-repeat center center;
 }
 
-.vacancy__link-mb {
+.back-link-mb {
     margin-bottom: 32px;
 }
 
-.vacancy__link {
+.back-link {
     font-family: 'Montserrat Alternates Medium';
     font-style: normal;
     font-weight: 500;
@@ -3676,6 +3690,337 @@ textarea {
     }
     .vacancy__text {
         font-size: 16px;
+    }
+}
+
+
+/* ====================================================================================================== 
+--PROJECT ABDD RISAD etc-- 
+====================================================================================================== */
+
+.project {
+    margin-top: 161px;
+}
+
+.project__banner-text {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 56px;
+    line-height: 125%;
+    padding: 112px 224px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.project-banner-abdd {
+    background: url(../img/projects/abdd-banner.png) no-repeat center center;
+    background-size: contain;
+    max-width: 1312px;
+    height: 524px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.project__tiles {
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.project__content {
+    padding: 96px 224px;
+}
+
+.project__content-with-img {
+    padding: 96px 224px 48px 224px;
+}
+
+.project__content-2 {
+    padding: 45px 224px 60px 224px;
+}
+
+.project__content-3 {
+    padding: 16px 224px 60px 224px;
+}
+
+.project__main {
+    display: flex;
+}
+
+.customer-img-fda {
+    background: url(../img/projects/rosavtodor.png) no-repeat center center;
+    width: 305px;
+    height: 230px;
+}
+
+.project__main-content {
+    max-width: 495px;
+    margin-left: 64px;
+}
+
+.project__main-text-sm {
+    font-family: 'Mulish SemiBold';
+    font-size: 16px;
+    line-height: 135%;
+    margin-top: 39px;
+    margin-bottom: 0;
+}
+
+.project__title {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    line-height: 125%;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.project__text {
+    font-family: 'Mulish Light';
+    font-size: 20px;
+    line-height: 175%;
+}
+
+.project__text li {
+    margin-bottom: 15px;
+}
+
+.pr-tiles-mb {
+    margin-bottom: 14px;
+}
+
+.project h4 {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 20px;
+    line-height: 125%;
+}
+
+.project h3 {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 24px;
+    line-height: 125%;
+    margin-top: 80px;
+}
+
+.quote {
+    display: flex;
+    padding: 48px;
+    background: rgba(47, 128, 237, 0.05);
+    border-radius: 8px;
+    margin: 80px 0;
+}
+
+.i-quotes {
+    background: url(../img/icons/quotes.svg) no-repeat center center;
+    background-size: contain;
+    width: 70px;
+    height: 54px;
+    flex: 1 1 75%;
+}
+
+.project__img-rescription {
+    font-family: 'Mulish Light';
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 0;
+    color: #6E7582;
+}
+
+.statistic-pr__col {
+    flex: 0 0 25%;
+    text-align: center;
+}
+
+.project__statistic {
+    background: rgba(47, 128, 237, 0.05);
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+.project__statistic .row {
+    justify-content: space-around;
+}
+
+.project__statistic .statistic__value {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.project__statistic .statistic__title {
+    font-size: 18px;
+}
+
+.project__statistic .statistic__wrap {
+    padding: 64px;
+}
+
+@media (max-width: 1399px) {
+    .project__banner-text {
+        font-size: 52px;
+    }
+    .project__content {
+        padding: 96px 160px;
+    }
+    .project__content-with-img {
+        padding: 96px 160px 48px 160px;
+    }
+    .project__content-2 {
+        padding: 45px 160px 60px 160px;
+    }
+    .project__content-3 {
+        padding: 16px 160px 60px 160px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .project__banner-text {
+        font-size: 40px;
+        padding: 80px 72px;
+    }
+    .project-banner-abdd {
+        width: 896px;
+        height: 358px;
+    }
+    .project__content {
+        padding: 64px 72px;
+    }
+    .project__content-with-img {
+        padding: 64px 72px 48px 72px;
+    }
+    .project__content-2 {
+        padding: 45px 72px 60px 72px;
+    }
+    .project__content-3 {
+        padding: 16px 72px 60px 72px;
+    }
+    .project__statistic .statistic__wrap {
+        padding: 32px;
+    }
+    .project__title {
+        font-size: 28px;
+    }
+    .customer-img-fda {
+        width: 380px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .project-banner-abdd {
+        margin: 0 auto;
+    }
+    .project__banner-text {
+        font-size: 32px;
+        padding: 54px 40px;
+    }
+    .project-banner-abdd {
+        width: 672px;
+        height: 268px;
+    }
+    .project__content {
+        padding: 56px 32px;
+    }
+    .project__content-with-img {
+        padding: 64px 32px 48px 32px;
+    }
+    .project__content-2 {
+        padding: 45px 32px 60px 32px;
+    }
+    .project__content-3 {
+        padding: 16px 32px 60px 32px;
+    }
+    .project__statistic .statistic__wrap {
+        padding: 32px;
+    }
+    .project__title {
+        font-size: 24px;
+    }
+    .customer-img-fda {
+        background-size: contain;
+        height: 200px;
+        flex: 0 0 35%;
+    }
+    .project__main-content {
+        margin-left: 10px;
+    }
+    .i-quotes {
+        margin-right: 20px;
+    }
+    .statistic-pr__col {
+        flex: 0 0 35%;
+    }
+}
+
+@media (max-width: 767px) {
+    .project .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .project {
+        margin-top: 95px;
+    }
+    .project__banner-text {
+        font-size: 28px;
+        padding: 26px 24px;
+    }
+    .project-banner-abdd {
+        width: 480px;
+        height: 192px;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .project__title {
+        font-size: 20px;
+    }
+    .project__text {
+        font-size: 18px;
+    }
+    .statistic-pr__col {
+        flex: 0 0 50%;
+    }
+    .project__statistic .statistic__value {
+        font-size: 28px;
+    }
+    .i-quotes {
+        display: none;
+    }
+    .project__content {
+        padding: 28px 24px;
+    }
+    .quote {
+        padding: 35px;
+        margin: 40px 0;
+    }
+    .project__tiles {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .project-banner-abdd {
+        width: 360px;
+        height: 145px;
+    }
+    .project__banner-text {
+        font-size: 20px;
+        padding: 22px 24px;
+    }
+    .project__content {
+        padding: 20px 20px;
+    }
+    .project__text {
+        font-size: 16px;
+    }
+    .project__content-with-img,
+    .project__content-2,
+    .project__content-3 {
+        padding: 20px 20px 20px 20px;
+    }
+    .statistic-pr__col {
+        flex: 0 0 100%;
+    }
+    .quote {
+        padding: 20px;
+        margin: 30px 0;
     }
 }
 
