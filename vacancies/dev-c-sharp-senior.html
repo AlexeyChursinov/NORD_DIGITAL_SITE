@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
 
-                                <button type="button" class="btn btn-green">Откликнуться</button>
+                                <button type="button" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#vacModal">Откликнуться</button>
                             </div>
                         </div>
                     </div>
@@ -150,11 +150,62 @@
                                 </div>
                             </div>
 
-                            <button type="button" class="btn btn-green">Откликнуться</button>
+                            <button type="button" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#vacModal">Откликнуться</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="vacModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="feedback__title">Вакансия «Главный разработчик C# (Senior)»</p>
+                            <p class="feedback__text">Заполните форму, и наш сотрудник свяжется с вами в ближайшее время</p>
+                            <form action="" class="feedback__form">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="col-lg-12 form-floating">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Имя">
+                                            <label for="name">Имя</label>
+                                        </div>
+                                        <div class="col-lg-12 form-floating">
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Телефон">
+                                            <label for="phone">Телефон</label>
+                                        </div>
+                                        <div class="col-lg-12 form-floating">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                            <label for="email">Email</label>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <input type="file" class="form-control" name="file-upload" id="file-upload">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="col-lg-12 form-floating">
+                                            <textarea type="text" class="form-control" name="message" id="message" placeholder="Сообщение"></textarea>
+                                            <label for="message">Сообщение</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="feedback__col-bottom-text">
+                                        <p class="agreement-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с политикой конфиденциальности</p>
+                                    </div>
+                                    <div class="feedback__col-bottom-btn">
+                                        <button type="submit" class="btn btn-primary submit-btn">Отправить<span class="i-msg"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <!-- --CAREER SECTION-- -->

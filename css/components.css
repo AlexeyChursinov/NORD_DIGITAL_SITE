@@ -980,6 +980,40 @@
       height: 743px;
   }
   
+  #vacModal .feedback__form {
+      margin-left: 0;
+      margin-top: 30px;
+  }
+  
+  #vacModal .modal-body {
+      position: relative;
+      flex: 1 1 auto;
+      padding: 4rem;
+      padding-top: 0;
+  }
+  
+  #vacModal .feedback__title {
+      margin-top: 10px;
+  }
+  
+  #vacModal input {
+      width: 90%;
+  }
+  
+  #vacModal textarea {
+      width: 90%;
+      min-height: 260px;
+  }
+  
+  #vacModal .submit-btn {
+      float: right;
+      margin-right: 20px;
+  }
+  
+  #vacModal .form-floating>label {
+      left: 7px;
+  }
+  
   .modal-backdrop {
       position: fixed;
       top: 0;
@@ -1312,6 +1346,26 @@
           max-width: 635px;
           margin: 1.75rem auto;
       }
+      #vacModal .submit-btn {
+          float: right;
+          margin-right: 0px;
+      }
+      #vacModal .modal-body {
+          padding: 2rem;
+          padding-top: 0;
+      }
+      #vacModal .feedback__col-bottom-text {
+          flex: 0 0 auto;
+          width: 54%;
+      }
+      #vacModal .feedback__col-bottom-btn {
+          flex: 0 0 auto;
+          width: 46%;
+          padding-right: 13px;
+      }
+      #vacModal .feedback__title {
+          font-size: 28px;
+      }
   }
   
   @media (max-width: 767px) {
@@ -1340,6 +1394,20 @@
       #servModal .feedback__title {
           font-size: 24px;
       }
+      #vacModal .feedback__col-bottom-text {
+          flex: 0 0 auto;
+          width: 100%;
+      }
+      #vacModal .feedback__col-bottom-btn {
+          flex: 0 0 auto;
+          width: 100%;
+      }
+      #vacModal .modal-dialog {
+          margin: 0 auto;
+      }
+      #vacModal .modal-content {
+          border-radius: 0;
+      }
   }
   
   @media (max-width: 479px) {
@@ -1359,7 +1427,7 @@
           width: 87%;
       }
       #servModal .feedback__title {
-          font-size: 20px;
+          font-size: 22px;
       }
       #servModal .feedback__text {
           font-size: 16px;
@@ -1368,5 +1436,19 @@
           padding: 1rem;
           padding-top: 0;
           padding-bottom: 7rem;
+      }
+      #vacModal .feedback__title {
+          font-size: 22px;
+      }
+      #vacModal .feedback__text {
+          font-size: 16px;
+      }
+      #vacModal .modal-body {
+          padding: 1rem;
+          padding-top: 0;
+      }
+      #vacModal input,
+      #vacModal textarea {
+          width: 87%;
       }
   }
