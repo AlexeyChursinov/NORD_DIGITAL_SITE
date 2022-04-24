@@ -1276,7 +1276,7 @@
   .feedback__col-bottom-btn {
       flex: 0 0 auto;
       width: 36%;
-      padding-right: 6px;
+      padding-right: 7px;
   }
   
   @media (max-width: 1200px) {
@@ -1300,6 +1300,7 @@
       #servModal .modal-body {
           padding: 2rem;
           padding-top: 0;
+          padding-bottom: 6rem;
       }
       .feedback__col-bottom-btn {
           padding-right: 10px;
@@ -1312,7 +1313,7 @@
   
   @media (max-width: 767px) {
       #servModal .modal-content {
-          height: 100%;
+          height: auto;
           border-radius: 0;
       }
       #servModal .modal-dialog {
@@ -1320,7 +1321,7 @@
           margin: 0;
       }
       #servModal .modal-dialog-centered {
-          height: 100%;
+          min-height: auto;
       }
       .feedback__col-bottom-btn {
           flex: 0 0 auto;
@@ -1339,16 +1340,9 @@
   }
   
   @media (max-width: 479px) {
-      #servModal .modal-content {
-          height: 100%;
-          border-radius: 0;
-      }
       #servModal .modal-dialog {
           max-width: 100%;
           margin: 0;
-      }
-      #servModal .modal-dialog-centered {
-          height: 100%;
       }
       .feedback__col-bottom-btn {
           flex: 0 0 auto;
@@ -1370,5 +1364,6 @@
       #servModal .modal-body {
           padding: 1rem;
           padding-top: 0;
+          padding-bottom: 7rem;
       }
   }
