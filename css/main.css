@@ -3624,6 +3624,11 @@ textarea {
     line-height: 125%;
     text-decoration: none;
     color: #90A4AF;
+    transition: all 0.15s ease-in-out;
+}
+
+.back-link:hover {
+    color: #56CCF2;
 }
 
 .vacancy__top {

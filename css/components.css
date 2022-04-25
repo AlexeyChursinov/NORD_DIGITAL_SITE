@@ -903,6 +903,9 @@
       #career-form textarea {
           padding: 50px 20px 12px 20px;
       }
+      #vacancies-form textarea {
+          padding: 50px 20px 12px 20px;
+      }
   }
   /* --MODAL-- */
   
