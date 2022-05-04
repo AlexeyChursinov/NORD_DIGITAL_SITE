@@ -111,6 +111,12 @@
         top: 10px;
         right: 10px;
     }
+    .navbar-sidebar {
+        margin-top: 10px;
+    }
+    .sidebar-content {
+        padding: 44px 54px;
+    }
 }
 
 @media (max-width: 479px) {
@@ -122,8 +128,5 @@
         position: absolute;
         top: 10px;
         right: 10px;
-    }
-    .sidebar-content {
-        padding: 64px 48px;
     }
 }
