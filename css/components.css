@@ -178,6 +178,9 @@
       .navbar-collapse {
           background: #fff;
       }
+      #nav {
+          height: 80px;
+      }
   }
   
   .fixed-top {
