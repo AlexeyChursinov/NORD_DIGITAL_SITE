@@ -59,7 +59,7 @@
 }
 
 .navbar-sidebar {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
 }
 
@@ -88,9 +88,16 @@
     margin-bottom: 10px;
 }
 
+.sidebar-contacts-email {
+    margin-top: 0;
+}
+
 @media (max-width: 1200px) {
     .sidebar {
         display: block;
+    }
+    .sidebar-content {
+        padding: 64px 122px;
     }
 }
 
