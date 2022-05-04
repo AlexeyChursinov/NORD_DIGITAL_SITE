@@ -1,7 +1,7 @@
 $(function() {
 
     /**
-     * Easy selector helper function
+     * selector helper function
      */
     const select = (el, all = false) => {
         el = el.trim()
@@ -13,7 +13,7 @@ $(function() {
     }
 
     /**
-     * Easy on scroll event listener 
+     * scroll event listener 
      */
     const onscroll = (el, listener) => {
         el.addEventListener('scroll', listener)
@@ -34,5 +34,21 @@ $(function() {
         window.addEventListener('load', headerScrolled)
         onscroll(document, headerScrolled)
     }
+
+    /*
+        Sidebar
+    */
+    $('.dismiss').on('click', function() {
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        $('.dismiss').removeClass('active');
+    });
+
+    $('.open-menu').on('click', function(e) {
+        e.preventDefault();
+        $('.sidebar').addClass('active');
+        $('.overlay').addClass('active');
+        $('.dismiss').addClass('active');
+    });
 
 });

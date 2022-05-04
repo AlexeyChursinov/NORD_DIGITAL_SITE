@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/vendor/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/main.css">
 
@@ -24,14 +25,14 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- --HEADER-- -->
     <header>
         <nav id="nav" class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand logo" href="../index.html"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler open-menu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -56,7 +57,51 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <!-- close sidebar menu -->
+            <div class="dismiss"></div>
+
+            <div class="sidebar-content">
+                <a class="navbar-brand logo" href="../index.html"></a>
+                <nav class="navbar navbar-expand-lg navbar-sidebar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../company.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">Проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../services.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../career.html">Карьера</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vacancies.html">Вакансии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sidebar-contacts">
+                    <p class="sidebar-contacts-phone">+7 (812) 374-52-43</p>
+                    <p class="sidebar-contacts-email">info.nd78@mail.ru</p>
+                    <p class="sidebar-contacts-address">Большая монетная, д. 16, 5-й эт., Санкт-Петербург, 197101</p>
+                </div>
+            </div>
+
+        </nav>
+        <!-- End sidebar -->
+
     </header>
+
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
 
     <main>
 

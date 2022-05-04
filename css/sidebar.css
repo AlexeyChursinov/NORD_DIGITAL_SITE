@@ -1,0 +1,122 @@
+/***** Sidebar *****/
+
+.sidebar {
+    display: none;
+    width: 622px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -622px;
+    z-index: 1045;
+    background: #fff;
+    color: #0C131D;
+    transition: all .3s;
+    text-align: left;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.dismiss {
+    background: url(../img/icons/sidebar-close.svg) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dismiss.active {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+}
+
+
+/***** Dark overlay *****/
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(12, 19, 29, 0.5);
+    z-index: 1030;
+    opacity: 0;
+    backdrop-filter: blur(5px);
+    transition: all .5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar-content {
+    padding: 64px 112px;
+}
+
+.navbar-sidebar {
+    margin-top: 40px;
+    display: flex;
+}
+
+.navbar-sidebar .navbar-nav {
+    margin-bottom: 23px;
+    padding-left: 0;
+}
+
+.navbar-sidebar .nav-link {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 24px;
+    line-height: 125%;
+    padding: 0.8rem 1rem;
+}
+
+.sidebar-contacts {
+    font-family: 'Mulish Light';
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.sidebar-contacts-phone {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 24px;
+    line-height: 125%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 480px;
+        left: -480px;
+    }
+    .dismiss.active {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    .sidebar {
+        width: 360px;
+        left: -360px;
+    }
+    .dismiss.active {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .sidebar-content {
+        padding: 64px 48px;
+    }
+}
