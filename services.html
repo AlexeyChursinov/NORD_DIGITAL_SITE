@@ -20,7 +20,9 @@
 
     <!-- JS -->
     <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.validate.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.js"></script>
+    <script src="js/feedback.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -143,7 +145,7 @@
                                 <div class="modal-body__col-content">
                                     <p class="feedback__title">Как мы можем помочь?</p>
                                     <p class="feedback__text">Заполните форму, и наш сотрудник свяжется с вами в ближайшее время</p>
-                                    <form action="" class="feedback__form">
+                                    <form class="feedback__form" id="consult__form">
                                         <div class="row">
                                             <div class="col-lg-12 form-floating">
                                                 <input type="text" class="form-control" name="name" id="name" placeholder="Имя">
@@ -169,6 +171,7 @@
                                             <div class="feedback__col-bottom-btn">
                                                 <button type="submit" class="btn btn-primary submit-btn">Отправить<span class="i-msg"></span></button>
                                             </div>
+                                            <div id="erconts"></div>
                                         </div>
                                     </form>
                                 </div>
@@ -313,7 +316,7 @@
                         <p class="feedback__text">Заполните форму, и наш сотрудник свяжется с вами в ближайшее время</p>
                     </div>
                     <div class="feedback__col-form">
-                        <form action="" class="feedback__form">
+                        <form class="feedback__form" id="feedback__form" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="feedback__col-top-fields form-floating">
                                     <input type="text" class="form-control" name="name" id="name" placeholder="Имя">
@@ -340,7 +343,7 @@
                                     <p class="agreement-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с политикой конфиденциальности</p>
                                 </div>
                                 <div class="feedback__col-bottom">
-                                    <button type="submit" class="btn btn-primary submit-btn">Отправить<span class="i-msg"></span></button>
+                                    <button type="submit" class="btn btn-primary submit-btn" name="sendMail" id="sendMail">Отправить<span class="i-msg"></span></button>
                                 </div>
                             </div>
                         </form>

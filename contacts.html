@@ -21,6 +21,7 @@
     <!-- JS -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.js"></script>
+    <script src="js/feedback.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -155,7 +156,7 @@
                         <p class="feedback__text">Заполните форму, и наш сотрудник свяжется с вами в ближайшее время</p>
                     </div>
                     <div class="feedback__col-form">
-                        <form action="" class="feedback__form">
+                        <form class="feedback__form" id="feedback__form">
                             <div class="row">
                                 <div class="feedback__col-top-fields form-floating">
                                     <input type="text" class="form-control" name="name" id="name" placeholder="Имя">
@@ -184,6 +185,7 @@
                                 <div class="feedback__col-bottom">
                                     <button type="submit" class="btn btn-primary submit-btn">Отправить<span class="i-msg"></span></button>
                                 </div>
+                                <div id="erconts"></div>
                             </div>
                         </form>
                     </div>
