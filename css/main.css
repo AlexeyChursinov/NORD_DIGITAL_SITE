@@ -4204,3 +4204,17 @@ textarea {
         flex-basis: 80%;
     }
 }
+
+@media print {
+    .back-link-mb,
+    .btn-green,
+    .vacansy__buttons,
+    .career,
+    footer,
+    header {
+        display: none;
+    }
+    .container {
+        max-width: 896px;
+    }
+}
