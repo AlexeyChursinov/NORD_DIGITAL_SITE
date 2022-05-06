@@ -15,7 +15,12 @@ $(function() {
         http.open("POST", "send_mail.php", true);
         http.onreadystatechange = function() {
             if (http.readyState == 4 && http.status == 200) {
-                alert(http.responseText);
+                // alert(http.responseText);
+                Swal.fire(
+                    'Сообщение отправлено',
+                    http.responseText,
+                    'success'
+                );
                 $('form#feedback__form').trigger('reset');
             }
         }
