@@ -1,3 +1,3 @@
 # NORD_DIGITAL_SITE
 
-Work in progress
+Верстка сайта компании по макету Figma
