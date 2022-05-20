@@ -766,7 +766,9 @@
   
   @media (max-width: 1200px) {
       .employees .swiper {
-          top: -84px;
+          /* top: -84px; */
+          top: -54px;
+          height: 445px;
       }
       .employees .swiper-button-prev {
           right: 125px;
@@ -814,6 +816,7 @@
       }
       .employees .swiper {
           padding-top: 106px;
+          height: 470px;
       }
       .employees .swiper-button-prev {
           right: 117px;
@@ -843,7 +846,7 @@
   
   @media (max-width: 767px) {
       .employees .swiper {
-          height: 465px;
+          height: 550px;
           padding-top: 90px;
           padding-bottom: 90px!important;
       }

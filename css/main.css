@@ -1355,7 +1355,7 @@ h2 {
     position: relative;
     width: 870px;
     border-radius: 16px;
-    padding: 50px 64px 50px 48px;
+    padding: 50px 64px 110px 48px;
     height: 262px;
     background-color: #FFFFFF;
     margin-left: 34px;
@@ -1365,10 +1365,23 @@ h2 {
     position: absolute;
     top: 27px;
     left: -116px;
-    background: url(../img/employee-1.png) no-repeat;
-    background-size: contain;
     width: 262px;
     height: 283px;
+}
+
+.emp-1 {
+    background: url(../img/employees/Maxim.png) no-repeat;
+    background-size: contain;
+}
+
+.emp-2 {
+    background: url(../img/employees/Nastya.png) no-repeat;
+    background-size: contain;
+}
+
+.emp-3 {
+    background: url(../img/employees/Aleksey.png) no-repeat;
+    background-size: contain;
 }
 
 .emp-text {
@@ -1401,10 +1414,10 @@ h2 {
 @media (max-width: 1200px) {
     .tiles-emps {
         width: 668px;
-        height: 227px;
+        height: 310px;
         margin-left: 0;
         margin-top: 98px;
-        padding: 92px 32px 10px 32px;
+        padding: 92px 32px 26px 32px;
     }
     .employees {
         margin-top: 114px;
@@ -1429,7 +1442,7 @@ h2 {
 @media (max-width: 1023px) {
     .tiles-emps {
         width: 531px;
-        padding: 92px 32px 40px 32px;
+        padding: 92px 32px 55px 32px;
     }
     .employees-career {
         margin-top: 150px;
@@ -1442,9 +1455,9 @@ h2 {
     }
     .tiles-emps {
         width: 368px;
-        height: 344px;
-        margin-top: 70px;
-        padding: 92px 32px 40px 24px;
+        height: 461px;
+        margin-top: 36px;
+        padding: 92px 32px 50px 24px;
     }
     .emp-text-name {
         font-size: 20px;
@@ -1460,7 +1473,7 @@ h2 {
 @media (max-width: 479px) {
     .tiles-emps {
         width: 275px;
-        height: 375px;
+        height: 485px;
     }
     .emp-text-description {
         font-size: 16px;
@@ -1474,6 +1487,10 @@ h2 {
 /* ======================================================================================================
 --LICENSES--
 ====================================================================================================== */
+
+.licenses-swiper-navigation-wrap {
+    display: none;
+}
 
 .licenses-mt-comp {
     margin-top: 200px;
@@ -1556,7 +1573,7 @@ h2 {
         height: 355px;
     }
     .licenses-mt-home {
-        margin-top: 573px;
+        margin-top: 612px;
     }
     .licenses .col-lg-4 {
         width: 100%;
@@ -1581,7 +1598,7 @@ h2 {
         width: 584px;
     }
     .licenses-mt-home {
-        margin-top: 604px;
+        margin-top: 634px;
     }
     .tiles-docs__text {
         font-size: 18px;
@@ -1590,7 +1607,7 @@ h2 {
         padding: 32px;
     }
     .tiles-docs__links {
-        margin-top: 150px;
+        margin-top: 108px;
     }
     .licenses-mt-comp {
         margin-top: 105px;
@@ -1599,7 +1616,7 @@ h2 {
 
 @media (max-width: 767px) {
     .licenses-mt-home {
-        margin-top: 670px;
+        margin-top: 728px;
     }
     .licenses-text {
         font-size: 18px;
@@ -1610,7 +1627,7 @@ h2 {
         height: 300px;
     }
     .tiles-docs__links {
-        margin-top: 68px;
+        margin-top: 45px;
     }
     .licenses-mt-comp {
         margin-top: 88px;
@@ -1626,7 +1643,7 @@ h2 {
         height: 270px;
     }
     .licenses-mt-home {
-        margin-top: 660px;
+        margin-top: 760px;
     }
     .tiles-docs__text {
         font-size: 16px;
@@ -1685,43 +1702,43 @@ h2 {
 }
 
 .partners-list-item-1 {
-    background: url(../img/partner-1.png) center center no-repeat;
+    background: url(../img/partners/Волгоград.jpg) center center no-repeat;
 }
 
 .partners-list-item-2 {
-    background: url(../img/partner-2.png) center center no-repeat;
+    background: url(../img/partners/Гнопроект.jpg) center center no-repeat;
 }
 
 .partners-list-item-3 {
-    background: url(../img/partner-3.png) center center no-repeat;
+    background: url(../img/partners/Курск_обл.jpg) center center no-repeat;
 }
 
 .partners-list-item-4 {
-    background: url(../img/partner-4.png) center center no-repeat;
+    background: url(../img/partners/Росавтодор.jpg) center center no-repeat;
 }
 
 .partners-list-item-5 {
-    background: url(../img/partner-5.png) center center no-repeat;
+    background: url(../img/partners/Росдорнии.jpg) center center no-repeat;
 }
 
 .partners-list-item-6 {
-    background: url(../img/partner-6.png) center center no-repeat;
+    background: url(../img/partners/Росдортехнология..jpg) center center no-repeat;
 }
 
 .partners-list-item-7 {
-    background: url(../img/partner-7.png) center center no-repeat;
+    background: url(../img/partners/Волгоград.jpg) center center no-repeat;
 }
 
 .partners-list-item-8 {
-    background: url(../img/partner-8.png) center center no-repeat;
+    background: url(../img/partners/Гнопроект.jpg) center center no-repeat;
 }
 
 .partners-list-item-9 {
-    background: url(../img/partner-9.png) center center no-repeat;
+    background: url(../img/partners/Курск_обл.jpg) center center no-repeat;
 }
 
 .partners-list-item-10 {
-    background: url(../img/partner-10.png) center center no-repeat;
+    background: url(../img/partners/Росавтодор.jpg) center center no-repeat;
 }
 
 @media (max-width: 1200px) {
@@ -2574,7 +2591,7 @@ textarea {
         margin-top: 80px;
     }
     .feedback-mt-career {
-        margin-top: 541px;
+        margin-top: 595px;
     }
 }
 
@@ -2589,7 +2606,7 @@ textarea {
         margin-top: 141px;
     }
     .feedback-mt-career {
-        margin-top: 570px;
+        margin-top: 620px;
     }
     .feedback-mt-vacancies {
         margin-top: 65px;
@@ -2622,7 +2639,7 @@ textarea {
         margin-top: 154px;
     }
     .feedback-mt-career {
-        margin-top: 636px;
+        margin-top: 715px;
     }
 }
 
@@ -2639,7 +2656,7 @@ textarea {
         font-size: 28px;
     }
     .feedback-mt-career {
-        margin-top: 645px;
+        margin-top: 740px;
     }
 }
 
