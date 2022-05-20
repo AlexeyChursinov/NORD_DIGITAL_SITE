@@ -1,3 +1,5 @@
 # NORD_DIGITAL_SITE
 
-Work in progress
+Верстка сайта компании по макету Figma
+
+https://alexeychursinov.github.io/NORD_DIGITAL_SITE/
