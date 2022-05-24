@@ -3695,6 +3695,9 @@ textarea {
     .vacancy {
         margin-top: 112px;
     }
+    .back-link-mb {
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 479px) {
@@ -3720,6 +3723,15 @@ textarea {
     font-size: 56px;
     line-height: 125%;
     padding: 112px 224px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.project__banner-text-risad {
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 56px;
+    line-height: 125%;
+    padding: 158px 224px;
     margin: 0;
     color: #FFFFFF;
 }
@@ -3798,6 +3810,7 @@ textarea {
 
 .pr-tiles-mb {
     margin-bottom: 14px;
+    text-align: justify;
 }
 
 .project h4 {
@@ -3869,6 +3882,10 @@ textarea {
     .project__banner-text {
         font-size: 52px;
     }
+    .project__banner-text-risad {
+        font-size: 52px;
+        padding: 166px 206px;
+    }
     .project__content {
         padding: 96px 160px;
     }
@@ -3887,6 +3904,10 @@ textarea {
     .project__banner-text {
         font-size: 40px;
         padding: 80px 72px;
+    }
+    .project__banner-text-risad {
+        font-size: 40px;
+        padding: 130px 72px;
     }
     .project-banner-abdd {
         width: 896px;
@@ -3923,6 +3944,10 @@ textarea {
     .project__banner-text {
         font-size: 32px;
         padding: 54px 40px;
+    }
+    .project__banner-text-risad {
+        font-size: 32px;
+        padding: 94px 40px;
     }
     .project-banner-abdd {
         width: 672px;
@@ -3975,6 +4000,10 @@ textarea {
         font-size: 28px;
         padding: 26px 24px;
     }
+    .project__banner-text-risad {
+        font-size: 28px;
+        padding: 44px 24px;
+    }
     .project-banner-abdd {
         width: 480px;
         height: 192px;
@@ -4016,6 +4045,10 @@ textarea {
     .project__banner-text {
         font-size: 20px;
         padding: 22px 24px;
+    }
+    .project__banner-text-risad {
+        font-size: 20px;
+        padding: 35px 24px;
     }
     .project__content {
         padding: 20px 20px;
