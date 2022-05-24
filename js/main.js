@@ -43,6 +43,8 @@ $(function() {
         $('.overlay').removeClass('active');
         $('.dismiss').removeClass('active');
         $('.cube').removeClass('hidden');
+        $('.banner__text_home').removeClass('hidden');
+        $('body').removeClass('dis-overflow');
     });
 
     $('.open-menu').on('click', function(e) {
@@ -51,6 +53,8 @@ $(function() {
         $('.overlay').addClass('active');
         $('.dismiss').addClass('active');
         $('.cube').addClass('hidden');
+        $('.banner__text_home').addClass('hidden');
+        $('body').addClass('dis-overflow');
     });
 
 });

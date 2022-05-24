@@ -55,6 +55,10 @@ h2 {
     display: none!important;
 }
 
+.dis-overflow {
+    overflow: hidden;
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 896px;
