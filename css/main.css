@@ -1706,7 +1706,7 @@ h2 {
 }
 
 .partners-list-item-2 {
-    background: url(../img/partners/Гнопроект.jpg) center center no-repeat;
+    background: url(../img/partners/Геопроект.jpg) center center no-repeat;
 }
 
 .partners-list-item-3 {
@@ -1723,22 +1723,6 @@ h2 {
 
 .partners-list-item-6 {
     background: url(../img/partners/Росдортехнология..jpg) center center no-repeat;
-}
-
-.partners-list-item-7 {
-    background: url(../img/partners/Волгоград.jpg) center center no-repeat;
-}
-
-.partners-list-item-8 {
-    background: url(../img/partners/Гнопроект.jpg) center center no-repeat;
-}
-
-.partners-list-item-9 {
-    background: url(../img/partners/Курск_обл.jpg) center center no-repeat;
-}
-
-.partners-list-item-10 {
-    background: url(../img/partners/Росавтодор.jpg) center center no-repeat;
 }
 
 @media (max-width: 1200px) {

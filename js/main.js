@@ -42,6 +42,7 @@ $(function() {
         $('.sidebar').removeClass('active');
         $('.overlay').removeClass('active');
         $('.dismiss').removeClass('active');
+        $('.cube').removeClass('hidden');
     });
 
     $('.open-menu').on('click', function(e) {
@@ -49,6 +50,7 @@ $(function() {
         $('.sidebar').addClass('active');
         $('.overlay').addClass('active');
         $('.dismiss').addClass('active');
+        $('.cube').addClass('hidden');
     });
 
 });

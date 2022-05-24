@@ -1,6 +1,6 @@
 <?php
 
-$to = 'alex.chursinov@gmail.com';
+$to = 'info.nd78@mail.ru';
 
 if (isset ($_POST['email'])) {
     $name  = substr( $_POST['name'], 0, 64 );
