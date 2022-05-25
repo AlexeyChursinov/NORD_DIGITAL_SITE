@@ -3,7 +3,7 @@ $(function() {
         direction: 'left',
         loop: -1,
         scrolldelay: 0,
-        scrollamount: 60,
+        scrollamount: 30,
         runshort: true,
         hoverstop: false,
         circular: true
@@ -12,7 +12,7 @@ $(function() {
         direction: 'right',
         loop: -1,
         scrolldelay: 0,
-        scrollamount: 60,
+        scrollamount: 15,
         runshort: true,
         hoverstop: false,
         circular: true
