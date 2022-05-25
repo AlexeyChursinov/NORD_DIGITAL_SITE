@@ -57,6 +57,8 @@ h2 {
 
 .dis-overflow {
     overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
 }
 
 @media (max-width: 1200px) {
