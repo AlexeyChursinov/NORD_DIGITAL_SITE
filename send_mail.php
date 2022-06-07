@@ -1,6 +1,7 @@
 <?php
 
 $to = 'info.nd78@mail.ru';
+// $to = 'a.chursinov@norddig.ru';
 
 if (isset ($_POST['email'])) {
     $name  = substr( $_POST['name'], 0, 64 );
@@ -32,7 +33,7 @@ if (isset ($_POST['email'])) {
   {
     $subject = 'Сообщение от Nord Digital';
     $boundary = "--".md5(uniqid(time())); // генерируем разделитель
-    $headers = "From: Nord Digital web-site ".$email."\r\n";   
+    $headers = "From: Nord Digital <info.nd78@mail.ru>".$email."\r\n";   
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .="Content-Type: multipart/mixed; boundary=\"".$boundary."\"\r\n";
     $multipart = "--".$boundary."\r\n";
