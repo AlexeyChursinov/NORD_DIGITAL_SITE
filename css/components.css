@@ -278,10 +278,13 @@
       background-color: #08e78a;
   }
   
-  .consult-btn,
-  .career-btn {
+  .consult-btn {
       margin-top: 70px;
       visibility: hidden;
+  }
+  
+  .career-btn {
+      margin-top: 70px;
   }
   
   .submit-btn {
