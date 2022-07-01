@@ -3623,6 +3623,10 @@ textarea {
     background: url(../img/icons/share.svg) no-repeat center center;
 }
 
+#share:hover {
+    cursor: pointer;
+}
+
 .back-link-mb {
     margin-bottom: 32px;
 }
