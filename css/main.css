@@ -1494,6 +1494,9 @@ h2 {
 --LICENSES--
 ====================================================================================================== */
 
+
+/* change to display:block if need show navigation */
+
 .licenses-swiper-navigation-wrap {
     display: none;
 }
