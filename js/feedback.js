@@ -16,11 +16,12 @@ $(function() {
         http.onreadystatechange = function() {
             if (http.readyState == 4 && http.status == 200) {
                 // alert(http.responseText);
-                Swal.fire(
-                    'Сообщение отправлено',
-                    http.responseText,
-                    'success'
-                );
+                swal({
+                    title: 'Сообщение отправлено',
+                    text: http.responseText,
+                    icon: 'success',
+                    button: "Оk"
+                });
                 $('form#feedback__form').trigger('reset');
             }
         }
